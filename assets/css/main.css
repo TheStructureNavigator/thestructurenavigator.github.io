@@ -1625,19 +1625,22 @@ input, select, textarea {
 
 		#main article#about {
 			background-color: rgba(20, 23, 26, 0.9);
-			border: 1px solid rgba(255, 255, 255, 0.2);
+			border: 1px solid rgba(255, 255, 255, 0.14);
 			box-shadow: 0 1.25rem 2.5rem rgba(0, 0, 0, 0.35);
 			padding-top: 3.4rem;
+			padding-bottom: 2.6rem;
 		}
 
 		#main article#about .major {
 			margin-bottom: 1.1rem;
+			border-bottom-color: rgba(255, 255, 255, 0.14);
+			color: rgba(255, 255, 255, 0.96);
 		}
 
 		#main article#about .about-layout {
 			display: grid;
 			grid-template-columns: minmax(180px, 1fr) minmax(280px, 1.45fr);
-			align-items: start;
+			align-items: stretch;
 			column-gap: 1.35rem;
 		}
 
@@ -1645,7 +1648,9 @@ input, select, textarea {
 			display: flex;
 			flex-direction: column;
 			gap: 0.5rem;
+			padding-bottom: 0.75rem;
 			padding-top: 0.15rem;
+			border-bottom: 1px solid rgba(255, 255, 255, 0.16);
 			font-family: "Source Sans Pro", sans-serif;
 		}
 
@@ -1659,10 +1664,22 @@ input, select, textarea {
 			line-height: 1.6;
 		}
 
+		#main article#about .about-line.about-line-soft {
+			font-size: 0.76rem;
+			letter-spacing: 0.05rem;
+			opacity: 0.85;
+		}
+
+		#main article#about .about-line.about-line-divider-top {
+			margin-top: 0.35rem;
+			padding-top: 0.55rem;
+			border-top: 1px solid rgba(255, 255, 255, 0.14);
+		}
+
 		#main article#about .about-summary {
 			margin: 0.65rem 0 0;
 			padding-top: 0.65rem;
-			border-top: 1px solid rgba(255, 255, 255, 0.2);
+			border-top: 1px solid rgba(255, 255, 255, 0.14);
 			font-size: 0.76rem;
 			font-weight: 300;
 			letter-spacing: 0.05rem;
@@ -1673,20 +1690,55 @@ input, select, textarea {
 
 		#main article#about .about-right .image.main {
 			margin: 0;
+			height: 100%;
 		}
 
 		#main article#about .about-right .image.main img {
 			border-radius: 3px;
 			object-fit: cover;
 			width: 100%;
-			height: 300px;
+			height: 100%;
 			box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.35);
+		}
+
+		#main article#about .about-cta {
+			position: absolute;
+			right: 0.85rem;
+			bottom: 0.85rem;
+			z-index: 2;
+		}
+
+		#main article#about .about-cta .button {
+			background-color: rgba(0, 0, 0, 0.32);
+			box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.75);
+			animation: aboutCtaPulse 2.6s ease-in-out infinite;
+		}
+
+		#main article#about .about-cta .button:hover {
+			background-color: rgba(255, 255, 255, 0.2);
+		}
+
+		@keyframes aboutCtaPulse {
+			0%,
+			100% {
+				transform: scale(1);
+				box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.85), 0 0 0 rgba(255, 255, 255, 0);
+			}
+			50% {
+				transform: scale(1.03);
+				box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.92), 0 0 0.7rem rgba(255, 255, 255, 0.18);
+			}
+		}
+
+		#main article#about .about-right {
+			position: relative;
 		}
 
 		@media screen and (max-width: 736px) {
 
 			#main article#about {
 				padding-top: 3.15rem;
+				padding-bottom: 2.6rem;
 			}
 
 			#main article#about .about-layout {
@@ -1696,6 +1748,7 @@ input, select, textarea {
 
 			#main article#about .about-left {
 				gap: 0.35rem;
+				padding-bottom: 0.5rem;
 			}
 
 			#main article#about .about-line,
@@ -1705,6 +1758,11 @@ input, select, textarea {
 
 			#main article#about .about-right .image.main img {
 				height: 260px;
+			}
+
+			#main article#about .about-cta {
+				right: 0.65rem;
+				bottom: 0.65rem;
 			}
 
 		}

@@ -35,17 +35,43 @@
       '<article id="about">',
       '  <h2 class="major">ABOUT</h2>',
       '  <div class="about-layout">',
+
       '    <div class="about-left">',
+
       '      <p class="about-line">Przemysław Szymoniak</p>',
-      '      <p class="about-line">Kędzierzyn-Koźle</p>',
-      '      <p class="about-line">Poland</p>',
-      '      <p class="about-summary">self-taught code assembler / problem solver</p>',
-      "    </div>",
+
+      '      <p class="about-line about-line-soft">M.Sc. Engineer</p>',
+
+      '      <p class="about-line about-line-soft">',
+      '        Computer Modelling of Systems and Processes',
+      '      </p>',
+
+      '      <p class="about-line about-line-soft about-line-divider-top">',
+      '        Digital Architect • Systems Engineering • Automation',
+      '      </p>',
+
+      '      <p class="about-summary">',
+      '        self-taught code assembler & problem solver',
+      '      </p>',
+
+      '      <p class="about-summary about-summary-secondary">',
+      '        designing industrial systems, business automation platforms,',
+      '        data-driven applications and mathematical frameworks',
+      '      </p>',
+
+      '    </div>',
+
       '    <div class="about-right">',
-      '      <span class="image main"><img src="images/background-photo.jpg" alt="" style="height: 300px;" /></span>',
-      "    </div>",
-      "  </div>",
-      "</article>",
+      '      <span class="image main">',
+      '        <img src="images/background-photo.jpg" alt="" />',
+      '      </span>',
+      '      <div class="about-cta">',
+      '        <a href="portfolio/index.html" class="button small">Dive deeper</a>',
+      '      </div>',
+      '    </div>',
+
+      '  </div>',
+      '</article>',
     ].join("\n");
   }
 
@@ -135,7 +161,7 @@
     var app = document.getElementById(ROOT_ID);
 
     if (!app) {
-      console.error('Missing root element: #' + ROOT_ID);
+      console.error("Missing root element: #" + ROOT_ID);
       return;
     }
 
