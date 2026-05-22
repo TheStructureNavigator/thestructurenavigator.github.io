@@ -1,10 +1,8 @@
 TSN Website
 
 Repository structure:
-- Entrypoint: /index.html (redirect to active portfolio)
+- Entrypoint: /index.html
 - Active portfolio: /TSN Portfolio/portfolio/
-- Legacy portfolio (archived): /Portfolio [Legacy]/
 
 Notes:
-- Root should stay minimal: legacy folder, TSN Portfolio folder, index.html, README.txt, and git metadata files.
-- Do not add new work to /Portfolio [Legacy]/ unless explicitly maintaining old pages.
+- Root should stay minimal: TSN Portfolio folder, index.html, index.js, README.txt, and git metadata files.
