@@ -362,7 +362,7 @@
         <div class="container">
             <div class="footer-distributed">
                 <div class="footer-left">
-                    <p class="footer-company-name">All Rights Reserved. &copy; 2024 <a href="#">TSN</a></p>
+                    <p class="footer-company-name">&copy; TSN | <span class="brand-case">TheStructureNavigator</span> | 2023 - <span id="portfolio-actual-year"></span></p>
                 </div>
             </div>
         </div><!-- end container -->
@@ -383,5 +383,8 @@
     <script src="js/contact_me.js"></script>
     <!-- ALL PLUGINS -->
     <script src="js/custom.js"></script>
+    <script>
+      document.getElementById('portfolio-actual-year').textContent = new Date().getFullYear();
+    </script>
 </body>
 </html>

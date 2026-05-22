@@ -2,7 +2,7 @@ TSN Website
 
 Repository structure:
 - Entrypoint: /index.html
-- Active portfolio: /TSN Portfolio/portfolio/
+- Active portfolio: /portfolio/
 
 Notes:
-- Root should stay minimal: TSN Portfolio folder, index.html, index.js, README.txt, and git metadata files.
+- Root should stay minimal: portfolio folder, index.html, index.js, README.txt, and git metadata files.

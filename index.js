@@ -17,7 +17,7 @@
       "  <nav>",
       "    <ul>",
       '      <li><a href="#about">About</a></li>',
-      '      <li><a href="TSN Portfolio/portfolio/index.html">Portfolio</a></li>',
+      '      <li><a href="portfolio/index.html">Portfolio</a></li>',
       '      <li><a href="#contact">Contact</a></li>',
       "    </ul>",
       "  </nav>",

@@ -1,0 +1,30 @@
+
+/** ADD YOUR AWESOME CODES HERE **/
+
+body.politics_version {
+  padding-bottom: 52px;
+}
+
+.copyrights {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1030;
+  padding: 12px 0;
+  background: rgba(27, 31, 34, 0.95);
+  border-top: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.copyrights .footer-company-name {
+  margin: 0;
+  text-align: center;
+  font-size: 0.6rem;
+  letter-spacing: 0.08rem;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.78);
+}
+
+.copyrights .footer-company-name .brand-case {
+  text-transform: none;
+}
