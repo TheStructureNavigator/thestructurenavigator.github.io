@@ -5,6 +5,42 @@ body.politics_version {
   padding-bottom: 52px;
 }
 
+#mainNav {
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.97) 0%, rgba(243, 248, 245, 0.96) 55%, rgba(255, 255, 255, 0.97) 100%);
+  border-bottom: 1px solid rgba(18, 181, 119, 0.28);
+}
+
+#mainNav .container {
+  max-width: 100%;
+  padding-left: 0.85rem;
+  padding-right: 1.15rem;
+}
+
+#mainNav .navbar-brand {
+  margin-right: auto;
+  padding-left: 0;
+}
+
+#mainNav .navbar-brand img {
+  width: 74px !important;
+  height: auto;
+}
+
+#mainNav .navbar-collapse {
+  justify-content: flex-end;
+}
+
+#mainNav .navbar-nav .nav-link {
+  color: rgba(34, 34, 34, 0.9);
+  border-radius: 4px;
+}
+
+#mainNav .navbar-nav .nav-link:hover,
+#mainNav .navbar-nav .nav-link:focus,
+#mainNav .navbar-nav .nav-link.active {
+  color: #ffffff;
+}
+
 .copyrights {
   position: fixed;
   left: 0;
@@ -12,8 +48,8 @@ body.politics_version {
   bottom: 0;
   z-index: 1030;
   padding: 12px 0;
-  background: rgba(27, 31, 34, 0.95);
-  border-top: 1px solid rgba(255, 255, 255, 0.18);
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.97) 0%, rgba(243, 248, 245, 0.96) 55%, rgba(255, 255, 255, 0.97) 100%);
+  border-top: 1px solid rgba(18, 181, 119, 0.28);
 }
 
 .copyrights .footer-company-name {
@@ -22,9 +58,20 @@ body.politics_version {
   font-size: 0.6rem;
   letter-spacing: 0.08rem;
   text-transform: uppercase;
-  color: rgba(255, 255, 255, 0.78);
+  color: rgba(34, 34, 34, 0.82);
 }
 
 .copyrights .footer-company-name .brand-case {
   text-transform: none;
+}
+
+@media (max-width: 991.98px) {
+  #mainNav .container {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+  }
+
+  #mainNav .navbar-brand img {
+    width: 64px !important;
+  }
 }
