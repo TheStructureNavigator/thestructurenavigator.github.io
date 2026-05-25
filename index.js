@@ -80,22 +80,21 @@
     return [
       '<article id="contact">',
       '  <h2 class="major">Contact</h2>',
-      '  <div class="about-layout">',
+      '  <div class="about-layout contact-layout">',
       '    <div class="about-left">',
-      '      <p class="about-line">Let\'s connect</p>',
       '      <p class="about-line about-line-soft">Direct email contact</p>',
-      '      <p class="about-line about-line-soft about-line-divider-top">',
-      '        <a href="mailto:szymoniak.przemyslaw96@gmail.com" style="color: inherit; text-decoration: none; border-bottom: 1px solid rgba(255, 255, 255, 0.35);">szymoniak.przemyslaw96@gmail.com</a>',
-      '      </p>',
-      '      <p class="about-summary">',
-      '        If you want to collaborate on automation,',
-      '      </p>',
-      '      <p class="about-summary about-summary-secondary">',
-      '        real estate systems, CRM or knowledge frameworks,',
-      '        send me a message below.',
+      '      <div class="about-line-divider-top contact-mail-card">',
+      '        <a href="mailto:szymoniak.przemyslaw96@gmail.com" class="contact-mail-link">szymoniak.przemyslaw96@gmail.com</a>',
+      '        <button type="button" class="contact-copy-btn" data-copy-email="szymoniak.przemyslaw96@gmail.com" aria-label="Copy email address">',
+      '          <i class="icon solid fa-copy" aria-hidden="true"></i>',
+      '        </button>',
+      '      </div>',
+      '      <p class="about-line about-line-soft">',
+      '        <a href="https://www.linkedin.com/in/przemys%C5%82aw-szymoniak-006495303/" class="contact-mail-link" target="_blank" rel="noopener noreferrer">LinkedIn</a> •',
+      '        <a href="https://useme.com/pl/roles/contractor/przemyslaw-szymoniak,423676/" class="contact-mail-link" target="_blank" rel="noopener noreferrer">Useme</a>',
       '      </p>',
       '    </div>',
-      '    <div class="about-right">',
+      '    <div class="about-right contact-right">',
       '      <form method="POST" action="https://formsubmit.co/szymoniak.przemyslaw96@gmail.com">',
       '        <div class="fields">',
       '          <div class="field half">',
@@ -185,9 +184,45 @@
     }
 
     app.innerHTML = renderApp();
+    bindContactCopy();
 
     loadTemplateScripts().catch(function (error) {
       console.error("Failed to load required scripts:", error);
+    });
+  }
+
+  function bindContactCopy() {
+    var copyBtn = document.querySelector(".contact-copy-btn");
+    if (!copyBtn) {
+      return;
+    }
+
+    copyBtn.addEventListener("click", function () {
+      var email = copyBtn.getAttribute("data-copy-email") || "";
+      if (!email) {
+        return;
+      }
+
+      function onSuccess() {
+        var original = copyBtn.innerHTML;
+        copyBtn.innerHTML = '<i class="icon solid fa-check" aria-hidden="true"></i>';
+        setTimeout(function () {
+          copyBtn.innerHTML = original;
+        }, 1200);
+      }
+
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(email).then(onSuccess).catch(function () {});
+        return;
+      }
+
+      var tmp = document.createElement("input");
+      tmp.value = email;
+      document.body.appendChild(tmp);
+      tmp.select();
+      document.execCommand("copy");
+      document.body.removeChild(tmp);
+      onSuccess();
     });
   }
 

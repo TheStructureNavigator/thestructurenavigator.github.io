@@ -1818,3 +1818,131 @@ input, select, textarea {
 		body.is-preload #footer {
 			opacity: 0;
 		}
+/* Core contact modal alignment with about modal */
+#contact .about-layout {
+  align-items: stretch;
+}
+
+#contact {
+  background: rgba(27, 31, 34, 0.85);
+}
+
+#contact .contact-right {
+  display: flex;
+  justify-content: flex-end;
+}
+
+#contact .contact-mail-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  background: rgba(255, 255, 255, 0.04);
+  padding: 0.75rem 0.85rem;
+  margin-bottom: 0.9rem;
+}
+
+#contact .contact-mail-link {
+  color: inherit;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.35);
+  word-break: break-all;
+  font-size: 0.74rem;
+}
+
+#contact .contact-mail-link:hover {
+  border-bottom-color: rgba(255, 255, 255, 0.7);
+}
+
+#contact .contact-copy-btn {
+  min-width: 2.4rem;
+  height: 2.4rem;
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  background: rgba(255, 255, 255, 0.06);
+  color: rgba(255, 255, 255, 0.92);
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+
+#contact .contact-copy-btn:hover {
+  background: rgba(255, 255, 255, 0.14);
+}
+
+@media screen and (max-width: 980px) {
+  #contact .contact-right {
+    justify-content: flex-start;
+  }
+
+  #contact .contact-form-wrap {
+    max-width: none;
+  }
+}
+
+/* Strong overrides: contact modal must match about modal layout/compactness */
+#contact .contact-layout {
+  display: grid !important;
+  grid-template-columns: 1fr 1fr !important;
+  gap: 1.25rem !important;
+  align-items: start !important;
+}
+
+#contact .about-left {
+  padding-right: 0.2rem;
+}
+
+#contact .about-line,
+#contact .about-line-soft,
+#contact .about-summary,
+#contact .about-summary-secondary {
+  font-size: inherit;
+  line-height: inherit;
+  letter-spacing: inherit;
+}
+
+#contact .about-summary,
+#contact .about-summary-secondary,
+#contact .about-line {
+  margin-bottom: 0.5rem;
+}
+
+#contact .contact-right form {
+  width: 100%;
+  max-width: 28.5rem;
+}
+
+#contact form .fields {
+  margin-bottom: 0.45rem;
+}
+
+#contact form .field label {
+  font-size: 0.82rem;
+}
+
+#contact form input[type="text"],
+#contact form textarea {
+  font-size: 0.82rem;
+  padding: 0.45rem 0.6rem;
+}
+
+#contact form input[type="text"]::placeholder,
+#contact form textarea::placeholder {
+  font-size: 0.78rem;
+}
+
+#contact form textarea {
+  min-height: 4.8rem;
+}
+
+@media screen and (max-width: 980px) {
+  #contact .contact-layout {
+    grid-template-columns: 1fr !important;
+  }
+
+  #contact .contact-right form {
+    max-width: none !important;
+  }
+}
