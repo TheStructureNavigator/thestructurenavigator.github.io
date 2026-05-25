@@ -3152,7 +3152,7 @@ body.politics_version .realestate-top-left {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    min-height: 74px;
+    min-height: 108px;
 }
 
 body.politics_version .realestate-lead {
@@ -3166,19 +3166,29 @@ body.politics_version .realestate-lead {
 body.politics_version .realestate-linkline {
     margin: 0.42rem 0 0;
     text-align: center;
-    display: inline-flex;
+    display: flex;
     align-items: center;
     justify-content: center;
     gap: 0.35rem;
     padding: 0.55rem 0.8rem;
     border: 1px solid rgba(255, 255, 255, 0.22);
     background: rgba(255, 255, 255, 0.05);
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 body.politics_version .realestate-linkline a {
     color: rgba(226, 239, 252, 0.96);
     border-bottom: 1px solid rgba(180, 205, 230, 0.6);
     font-size: 1rem;
+    letter-spacing: 0.02rem;
+}
+
+body.politics_version .realestate-bottom-left > .realestate-subtitle:first-child {
+    font-size: 1.18rem;
+    line-height: 1.45;
+    color: rgba(236, 243, 250, 0.9);
     letter-spacing: 0.02rem;
 }
 
@@ -3196,6 +3206,24 @@ body.politics_version .realestate-subtitle {
     line-height: 1.58;
     color: rgba(216, 225, 235, 0.78);
     margin: 0;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+body.politics_version .realestate-bottom-left > .realestate-subtitle:first-child {
+    text-align: center;
+}
+
+body.politics_version .realestate-subtitle-main {
+    font-size: 1.08rem;
+    color: rgba(230, 238, 247, 0.9);
+    margin-top: 0.9rem;
+    margin-bottom: 0.55rem;
+    text-align: center;
+}
+
+body.politics_version .realestate-subtitle-secondary {
+    text-align: center;
 }
 
 body.politics_version .realestate-tab-left p a {
@@ -3215,6 +3243,9 @@ body.politics_version .realestate-tab-right {
 
 body.politics_version .realestate-top-right {
     grid-area: top-right;
+    display: flex;
+    align-items: center;
+    min-height: 108px;
 }
 
 body.politics_version .realestate-bottom-right {
@@ -3226,9 +3257,10 @@ body.politics_version .realestate-bottom-right {
 body.politics_version .realestate-brand {
     display: flex;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     margin-top: 0;
-    align-self: start;
+    align-self: center;
+    width: 100%;
 }
 
 body.politics_version .realestate-brand-inner {
@@ -3251,7 +3283,20 @@ body.politics_version .realestate-brand-inner img {
     max-height: 74px;
     object-fit: contain;
     object-position: center;
-    filter: saturate(1.02) contrast(1.03);
+    filter: brightness(0.84) saturate(0.95) contrast(1.02);
+    transform: scale(1);
+    transition: filter 0.22s ease, transform 0.22s ease;
+}
+
+body.politics_version .realestate-brand-link {
+    display: block;
+    width: 100%;
+}
+
+body.politics_version .realestate-brand-link:hover img,
+body.politics_version .realestate-brand-link:focus img {
+    filter: brightness(1) saturate(1.05) contrast(1.04);
+    transform: scale(1.02);
 }
 
 body.politics_version .realestate-tab-right .gallery-single {
