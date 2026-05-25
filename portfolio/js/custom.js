@@ -11,9 +11,10 @@
 		if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
 		  var target = $(this.hash);
 		  target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+		  var topOffset = this.hash === '#portfolio' ? 90 : 54;
 		  if (target.length) {
 			$('html, body').animate({
-			  scrollTop: (target.offset().top - 54)
+			  scrollTop: (target.offset().top - topOffset)
 			}, 1000, "easeInOutExpo");
 			return false;
 		  }
@@ -86,7 +87,7 @@
 		$('.ct-slick-homepage').slick({
 			autoplay: false,
 			autoplaySpeed: 3000,
-			pauseOnHover: false,
+			pauseOnHover: false
 		});			
 		
 		$('.ct-slick-homepage').on('afterChange', function(event, slick, currentSlide) {
@@ -116,17 +117,81 @@
 	// Gallery Filter
         var Container = $('.container');
         Container.imagesLoaded(function () {
-            var portfolio = $('.gallery-menu');
-            portfolio.on('click', 'button', function () {
-                $(this).addClass('active').siblings().removeClass('active');
-                var filterValue = $(this).attr('data-filter');
-                $grid.isotope({
-                    filter: filterValue
-                });
-            });
             var $grid = $('.gallery-list').isotope({
                 itemSelector: '.gallery-grid'
             });
+            var $filters = $('.gallery-menu');
+            var $allItems = $grid.find('.gallery-grid');
+            var $prev = $('#portfolio-prev');
+            var $next = $('#portfolio-next');
+            var $status = $('#portfolio-page-status');
+            var $pager = $('#portfolio-pager');
+            var $realestateTab = $('#realestate-tab');
+            var $galleryList = $('.gallery-list');
+            var itemsPerPage = 9;
+            var currentPage = 1;
+            var currentFilter = '.gal_realestate';
+            var totalPages = 1;
+
+            function getFilteredItems() {
+                if (currentFilter === '*') {
+                    return $allItems;
+                }
+                return $allItems.filter(currentFilter);
+            }
+
+            function applyPage() {
+                if (currentFilter === '.gal_realestate') {
+                    $realestateTab.css('display', 'grid');
+                    $galleryList.hide();
+                    $pager.hide();
+                    return;
+                }
+
+                $realestateTab.hide();
+                $galleryList.show();
+
+                var $filtered = getFilteredItems();
+                var totalItems = $filtered.length;
+                totalPages = Math.max(1, Math.ceil(totalItems / itemsPerPage));
+                currentPage = Math.min(currentPage, totalPages);
+
+                var start = (currentPage - 1) * itemsPerPage;
+                var end = start + itemsPerPage;
+
+                $allItems.removeClass('page-visible');
+                $filtered.slice(start, end).addClass('page-visible');
+
+                $grid.isotope({ filter: '.page-visible' });
+
+                $status.text(currentPage + ' / ' + totalPages);
+                $prev.prop('disabled', currentPage === 1);
+                $next.prop('disabled', currentPage === totalPages);
+                $pager.toggle(totalItems > itemsPerPage);
+            }
+
+            $filters.on('click', 'button', function () {
+                $(this).addClass('active').siblings().removeClass('active');
+                currentFilter = $(this).attr('data-filter') || '*';
+                currentPage = 1;
+                applyPage();
+            });
+
+            $prev.on('click', function () {
+                if (currentPage > 1) {
+                    currentPage -= 1;
+                    applyPage();
+                }
+            });
+
+            $next.on('click', function () {
+                if (currentPage < totalPages) {
+                    currentPage += 1;
+                    applyPage();
+                }
+            });
+
+            applyPage();
 
         });
 	

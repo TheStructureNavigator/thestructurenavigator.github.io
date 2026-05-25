@@ -2814,3 +2814,561 @@ select.mobile-device {
     border-color: rgba(255, 255, 255, 0.6);
     color: rgba(255, 255, 255, 0.6);
 }
+
+/*------------------------------------------------------------------
+    TSN MAIN-LIKE PORTFOLIO OVERRIDES
+-------------------------------------------------------------------*/
+
+body.politics_version {
+    color: rgba(255, 255, 255, 0.78);
+    font-family: "Source Sans Pro", "Ubuntu", sans-serif;
+    background: #0a0e12;
+}
+
+body.politics_version .ct-header.tablex.item {
+    position: relative;
+    background-position: center center !important;
+    background-size: cover !important;
+}
+
+body.politics_version .ct-header.tablex.item::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background:
+        linear-gradient(130deg, rgba(12, 14, 16, 0.68) 0%, rgba(16, 18, 20, 0.48) 45%, rgba(9, 10, 12, 0.7) 100%),
+        linear-gradient(25deg, rgba(31, 139, 183, 0.16) 0%, rgba(63, 191, 141, 0.09) 52%, rgba(255, 255, 255, 0.08) 100%);
+    z-index: 0;
+}
+
+body.politics_version .ct-header.tablex.item .inner {
+    position: relative;
+    z-index: 1;
+}
+
+body.politics_version #mainNav.navbar-dark,
+body.politics_version #mainNav.navbar-shrink {
+    background: linear-gradient(120deg, rgba(18, 22, 26, 0.48) 0%, rgba(15, 19, 24, 0.38) 100%);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.16);
+    backdrop-filter: blur(12px) saturate(118%);
+    -webkit-backdrop-filter: blur(12px) saturate(118%);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.16);
+}
+
+body.politics_version .navbar-dark .navbar-nav .nav-link {
+    color: rgba(255, 255, 255, 0.95) !important;
+    letter-spacing: 0.08rem;
+    text-transform: uppercase;
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.22);
+    text-shadow: none;
+}
+
+body.politics_version .navbar-dark .navbar-nav .nav-link.active,
+body.politics_version .navbar-dark .navbar-nav .nav-link:hover,
+body.politics_version .navbar-dark .navbar-nav .nav-link:focus {
+    background: rgba(255, 255, 255, 0.14);
+    border-color: rgba(255, 255, 255, 0.36);
+    color: #ffffff;
+}
+
+body.politics_version .navbar-dark .navbar-toggler {
+    color: rgba(255, 255, 255, 0.9);
+    border-color: rgba(255, 255, 255, 0.24);
+}
+
+body.politics_version .section.wb,
+body.politics_version .section.lb {
+    background: transparent;
+}
+
+body.politics_version #services.section {
+    background: linear-gradient(110deg, rgba(12, 15, 19, 1) 0%, rgba(10, 13, 17, 1) 56%, rgba(7, 10, 13, 1) 100%);
+}
+
+body.politics_version #portfolio.section {
+    background: linear-gradient(110deg, rgba(12, 15, 19, 1) 0%, rgba(10, 13, 17, 1) 56%, rgba(7, 10, 13, 1) 100%);
+}
+
+body.politics_version #services {
+    scroll-margin-top: 6.6rem;
+}
+
+body.politics_version #portfolio {
+    scroll-margin-top: 9.4rem;
+}
+
+body.politics_version #about .container,
+body.politics_version #portfolio .container {
+    background: rgba(20, 23, 26, 0.84);
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    border-radius: 4px;
+    box-shadow: 0 1.2rem 2.4rem rgba(0, 0, 0, 0.32);
+    padding: 2.2rem 2rem;
+}
+
+body.politics_version #services .container {
+    background: transparent;
+    border: 0;
+    border-radius: 0;
+    box-shadow: none;
+    padding-left: 0.85rem;
+    padding-right: 0.85rem;
+}
+
+body.politics_version #portfolio .container {
+    background: transparent;
+    border: 0;
+    border-radius: 0;
+    box-shadow: none;
+    padding-left: 0.85rem;
+    padding-right: 0.85rem;
+}
+
+body.politics_version .section-title h3,
+body.politics_version .message-box h2 {
+    color: rgba(255, 255, 255, 0.95);
+    letter-spacing: 0.18rem;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+body.politics_version #services .section-title {
+    margin-bottom: 1.15rem;
+}
+
+body.politics_version .section-title p,
+body.politics_version .message-box p,
+body.politics_version .services-inner-box p {
+    color: rgba(255, 255, 255, 0.72);
+}
+
+body.politics_version .slider-inner h1.big {
+    color: rgba(255, 255, 255, 0.96);
+    letter-spacing: 0.05rem;
+    text-transform: uppercase;
+}
+
+body.politics_version .slider-inner p {
+    color: rgba(255, 255, 255, 0.78);
+}
+
+body.politics_version .services-inner-box {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    box-shadow: none;
+    min-height: 100%;
+    margin-bottom: 0;
+    text-align: left;
+}
+
+body.politics_version #services .row > [class*="col-"] {
+    display: flex;
+}
+
+body.politics_version .services-inner-box .service-head {
+    display: flex;
+    align-items: center;
+    gap: 0.9rem;
+    margin-bottom: 0.8rem;
+}
+
+body.politics_version .services-inner-box .service-head .ser-icon {
+    margin: 0;
+    flex: 0 0 90px;
+}
+
+body.politics_version .services-inner-box h2 {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 1.15rem;
+    letter-spacing: 0.05rem;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    flex: 1;
+}
+
+body.politics_version .services-inner-box p {
+    margin: 0;
+    text-align: left;
+}
+
+body.politics_version .services-inner-box:hover::before {
+    background: rgba(63, 191, 141, 0.16);
+}
+
+body.politics_version .ser-icon {
+    background: rgba(47, 132, 95, 0.88);
+}
+
+body.politics_version .btn-new {
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.38);
+    color: rgba(255, 255, 255, 0.96);
+    font-size: 0.72rem;
+    letter-spacing: 0.16rem;
+    padding: 0.7rem 1.2rem;
+    text-shadow: 0 0 0.2rem rgba(255, 255, 255, 0.25);
+}
+
+body.politics_version #portfolio .gallery-menu .button-group {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 0;
+    width: 100%;
+}
+
+body.politics_version #portfolio .gallery-menu .button-group .btn-new {
+    min-width: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 0;
+}
+
+body.politics_version .from-middle:before {
+    border-color: rgba(255, 255, 255, 0.32);
+}
+
+body.politics_version .from-middle:after {
+    background: rgba(255, 255, 255, 0.16);
+}
+
+body.politics_version .btn-new:hover,
+body.politics_version .btn-new:focus,
+body.politics_version .btn-new.active {
+    color: #ffffff;
+    background: rgba(255, 255, 255, 0.22);
+    border-color: rgba(255, 255, 255, 0.55);
+}
+
+body.politics_version .gallery-single {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+body.politics_version .gallery-single .img-fluid {
+    filter: saturate(0.88) contrast(1.02);
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+    background: rgba(10, 13, 17, 0.92);
+}
+
+body.politics_version .text-hover h3,
+body.politics_version .text-hover h4 {
+    color: rgba(255, 255, 255, 0.93);
+}
+
+body.politics_version .img-overlay {
+    background: rgba(16, 18, 20, 0.58);
+}
+
+body.politics_version .hoverbutton.global-radius {
+    background: rgba(20, 23, 26, 0.82);
+    border: 1px solid rgba(255, 255, 255, 0.42);
+    color: #ffffff;
+}
+
+body.politics_version .portfolio-pager {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    margin: 0.25rem 0 0.55rem;
+}
+
+body.politics_version .portfolio-pager .pager-btn {
+    width: 2.1rem;
+    height: 2.1rem;
+    line-height: 2rem;
+    border: 1px solid rgba(63, 191, 141, 0.45);
+    background: rgba(63, 191, 141, 0.12);
+    color: rgba(255, 255, 255, 0.95);
+    font-size: 1rem;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+body.politics_version .portfolio-pager .pager-btn:hover:not(:disabled) {
+    background: rgba(63, 191, 141, 0.24);
+    border-color: rgba(63, 191, 141, 0.62);
+}
+
+body.politics_version .portfolio-pager .pager-btn:disabled {
+    opacity: 0.45;
+    cursor: default;
+}
+
+body.politics_version .portfolio-pager .pager-status {
+    color: rgba(255, 255, 255, 0.82);
+    letter-spacing: 0.08rem;
+    font-size: 0.75rem;
+}
+
+body.politics_version .realestate-tab {
+    display: none;
+    grid-template-columns: 1.05fr 1fr;
+    gap: 1.2rem;
+    align-items: start;
+    margin: 0.55rem 0 0.35rem;
+    padding: 1rem;
+    border-radius: 10px;
+    border: 1px solid rgba(110, 128, 146, 0.28);
+    background:
+        linear-gradient(130deg, rgba(16, 22, 28, 0.86) 0%, rgba(11, 16, 22, 0.82) 100%),
+        rgba(8, 12, 16, 0.9);
+    backdrop-filter: blur(14px) saturate(110%);
+    -webkit-backdrop-filter: blur(14px) saturate(110%);
+    box-shadow: 0 18px 34px rgba(0, 0, 0, 0.45);
+}
+
+body.politics_version .realestate-tab-left h4 {
+    color: rgba(255, 255, 255, 0.95);
+    letter-spacing: 0.12rem;
+    text-transform: uppercase;
+    margin: 0 0 0.75rem;
+    font-size: 1.42rem;
+    line-height: 1.3 !important;
+}
+
+body.politics_version .realestate-tab-left .realestate-divider {
+    width: 100%;
+    height: 1px;
+    background: rgba(156, 178, 201, 0.28);
+    margin: 0.65rem 0 0.9rem;
+}
+
+body.politics_version .realestate-tab-left p {
+    color: rgba(216, 225, 235, 0.78);
+    margin: 0;
+    line-height: 1.6;
+    font-size: 0.97rem;
+}
+
+body.politics_version .realestate-tab-left p a {
+    color: rgba(206, 220, 236, 0.9);
+    border-bottom: 1px solid rgba(151, 174, 198, 0.45);
+}
+
+body.politics_version .realestate-tab-left p a:hover {
+    color: rgba(229, 239, 250, 0.98);
+    border-bottom-color: rgba(169, 193, 218, 0.72);
+}
+
+body.politics_version .realestate-tab-right {
+    display: grid;
+    gap: 0.8rem;
+}
+
+body.politics_version .realestate-tab-right .gallery-single {
+    margin: 0;
+    border-radius: 8px;
+    border: 1px solid rgba(103, 124, 146, 0.34);
+    background: rgba(10, 15, 21, 0.78);
+    backdrop-filter: blur(10px) saturate(108%);
+    -webkit-backdrop-filter: blur(10px) saturate(108%);
+    overflow: hidden;
+    transition: transform 0.22s ease, box-shadow 0.22s ease, border-color 0.22s ease;
+}
+
+body.politics_version .realestate-tab-right .gallery-single:hover {
+    transform: translateY(-2px);
+    border-color: rgba(131, 154, 178, 0.52);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.35);
+}
+
+body.politics_version .copyrights {
+    background: linear-gradient(120deg, rgba(18, 22, 26, 0.42) 0%, rgba(15, 19, 24, 0.34) 100%);
+    border-top: 1px solid rgba(255, 255, 255, 0.14);
+    backdrop-filter: blur(12px) saturate(118%);
+    -webkit-backdrop-filter: blur(12px) saturate(118%);
+    box-shadow: 0 -8px 24px rgba(0, 0, 0, 0.14);
+}
+
+body.politics_version .copyrights .container {
+    background: transparent;
+    border: 0;
+    border-radius: 0;
+    box-shadow: none;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+body.politics_version .footer-distributed .footer-company-name {
+    color: rgba(255, 255, 255, 0.78);
+    letter-spacing: 0.08rem;
+    text-transform: uppercase;
+}
+
+body.politics_version .dmtop {
+    bottom: 34px;
+}
+
+body.politics_version .dmtop.show {
+    bottom: 34px;
+}
+
+@media (min-width: 1200px) {
+    body.politics_version #services.section {
+        min-height: calc(100vh - 6.2rem);
+        padding: 1.1rem 0 0.75rem;
+        display: flex;
+        align-items: center;
+    }
+
+    body.politics_version #services .container {
+        width: 100%;
+        min-height: calc(100vh - 8.3rem);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-top: 0.75rem;
+        padding-bottom: 0.75rem;
+    }
+
+    body.politics_version #services .section-title {
+        margin-bottom: 0.9rem;
+    }
+
+    body.politics_version #services .section-title h3 {
+        font-size: 1.86rem;
+        line-height: 1.2 !important;
+        margin-bottom: 0.24rem;
+        padding-bottom: 0;
+    }
+
+    body.politics_version #services .section-title p {
+        font-size: 1.1rem;
+        line-height: 1.3;
+        margin-bottom: 0.12rem;
+    }
+
+    body.politics_version #services .row {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    body.politics_version #services .row > [class*="col-"] {
+        margin-bottom: 0.5rem;
+    }
+
+    body.politics_version #services .services-inner-box {
+        padding: 0.62rem 0.62rem 0.58rem;
+    }
+
+    body.politics_version #services .ser-icon {
+        width: 64px;
+        height: 64px;
+        line-height: 64px;
+        margin-bottom: 0.42rem;
+    }
+
+    body.politics_version #services .ser-icon img {
+        width: 46px !important;
+    }
+
+    body.politics_version #services .services-inner-box .service-head .ser-icon {
+        margin: 0;
+        margin-bottom: 0;
+        flex: 0 0 64px;
+    }
+
+    body.politics_version #services .services-inner-box h2 {
+        font-size: 0.95rem;
+        line-height: 1.25 !important;
+        margin-bottom: 0.34rem;
+    }
+
+    body.politics_version #services .services-inner-box p {
+        font-size: 0.81rem;
+        line-height: 1.28;
+        margin-bottom: 0;
+    }
+
+    body.politics_version #portfolio.section {
+        min-height: calc(100vh - 6.2rem);
+        padding: 0.72rem 0 0.55rem;
+        display: flex;
+        align-items: center;
+    }
+
+    body.politics_version #portfolio .container {
+        width: 100%;
+        min-height: calc(100vh - 7.7rem);
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding-top: 0.45rem;
+        padding-bottom: 0.45rem;
+    }
+
+    body.politics_version #portfolio .section-title {
+        margin-bottom: 0.2rem;
+    }
+
+    body.politics_version #portfolio .section-title h3 {
+        font-size: 1.68rem;
+        line-height: 1.2 !important;
+        margin-bottom: 0.16rem;
+        padding-bottom: 0;
+    }
+
+    body.politics_version #portfolio .section-title p {
+        font-size: 1rem;
+        line-height: 1.22;
+        margin-bottom: 0.08rem;
+    }
+
+    body.politics_version #portfolio .gallery-menu {
+        margin-bottom: 0.18rem;
+    }
+
+    body.politics_version #portfolio .portfolio-pager {
+        margin-bottom: 0.35rem;
+    }
+
+    body.politics_version #portfolio .button-group .btn-new {
+        margin-bottom: 0.2rem;
+        font-size: 0.66rem;
+        letter-spacing: 0.12rem;
+        padding: 0.5rem 0.92rem;
+    }
+
+    body.politics_version #portfolio .gallery-list .gallery-grid {
+        margin-bottom: 0.2rem;
+        padding-left: 0.35rem;
+        padding-right: 0.35rem;
+        flex: 0 0 33.3333%;
+        max-width: 33.3333%;
+    }
+
+    body.politics_version #portfolio .gallery-single {
+        transform: scale(0.88);
+        transform-origin: center top;
+    }
+
+    body.politics_version #portfolio .gallery-single img {
+        min-height: 175px;
+        max-height: 175px;
+        object-fit: contain;
+        object-position: center;
+        padding: 0.35rem;
+    }
+}
+
+@media (max-width: 991px) {
+    body.politics_version #services .container,
+    body.politics_version #portfolio .container {
+        padding: 1.6rem 1.2rem;
+    }
+
+    body.politics_version .realestate-tab {
+        grid-template-columns: 1fr;
+    }
+}
