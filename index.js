@@ -64,7 +64,7 @@
       '    <div class="about-right" style="display: flex; align-items: stretch;">',
       '      <div style="position: relative; width: 100%; height: 100%;">',
       '        <span class="image main" style="margin-bottom: 0;">',
-      '          <img src="images/background-photo.jpg" alt="" style="display: block; width: 100%; height: 100%; min-height: 100%; object-fit: cover;" />',
+      '          <img src="images/background-photo.webp" alt="" style="display: block; width: 100%; height: 100%; min-height: 100%; object-fit: cover;" />',
       '        </span>',
       '        <a href="#contact" class="button small" style="position: absolute; top: 0.75rem; right: 0.75rem;">CONTACT</a>',
       '        <a href="portfolio/index.html" class="button small" style="position: absolute; right: 0.75rem; bottom: 0.75rem;">Dive deeper</a>',
