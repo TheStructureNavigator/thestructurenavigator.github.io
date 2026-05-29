@@ -3609,6 +3609,33 @@ body.politics_version .research-tab {
     margin: 0.55rem 0 0.35rem;
 }
 
+body.politics_version .knowledge-tab {
+    display: none;
+    margin: 0.55rem 0 0.35rem;
+    padding: 1.05rem 1rem;
+    border-radius: 10px;
+    border: 1px solid rgba(110, 128, 146, 0.28);
+    background:
+        linear-gradient(130deg, rgba(16, 22, 28, 0.86) 0%, rgba(11, 16, 22, 0.82) 100%),
+        rgba(8, 12, 16, 0.9);
+    text-align: center;
+}
+
+body.politics_version .knowledge-tab-title {
+    margin: 0 0 0.42rem;
+    color: rgba(236, 243, 250, 0.92);
+    text-transform: uppercase;
+    letter-spacing: 0.08rem;
+    font-size: 0.92rem;
+}
+
+body.politics_version .knowledge-tab-text {
+    margin: 0;
+    color: rgba(216, 225, 235, 0.8);
+    font-size: 0.88rem;
+    line-height: 1.5;
+}
+
 body.politics_version .contact-tab {
     display: none;
     margin: 0.55rem 0 0.35rem;

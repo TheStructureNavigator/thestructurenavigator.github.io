@@ -128,6 +128,7 @@
             var $pager = $('#portfolio-pager');
             var $realestateTab = $('#realestate-tab');
             var $researchTab = $('#research-tab');
+            var $knowledgeTab = $('#knowledge-tab');
             var $galleryList = $('.gallery-list');
             var itemsPerPage = 9;
             var currentPage = 1;
@@ -145,6 +146,7 @@
                 if (currentFilter === '.gal_realestate') {
                     $realestateTab.css('display', 'grid');
                     $researchTab.hide();
+                    $knowledgeTab.hide();
                     $galleryList.hide();
                     $pager.hide();
                     return;
@@ -153,6 +155,16 @@
                 if (currentFilter === '.gal_research') {
                     $realestateTab.hide();
                     $researchTab.css('display', 'grid');
+                    $knowledgeTab.hide();
+                    $galleryList.hide();
+                    $pager.hide();
+                    return;
+                }
+
+                if (currentFilter === '.gal_knowledge') {
+                    $realestateTab.hide();
+                    $researchTab.hide();
+                    $knowledgeTab.css('display', 'block');
                     $galleryList.hide();
                     $pager.hide();
                     return;
@@ -160,6 +172,7 @@
 
                 $realestateTab.hide();
                 $researchTab.hide();
+                $knowledgeTab.hide();
                 $galleryList.show();
 
                 var $filtered = getFilteredItems();
