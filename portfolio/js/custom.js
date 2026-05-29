@@ -205,6 +205,33 @@
             applyPage();
 
         });
+
+    // Portfolio contact copy email
+    $(document).on('click', '.contact-tab-copy-btn', function () {
+        var $btn = $(this);
+        var email = $btn.attr('data-copy-email') || '';
+        if (!email) return;
+
+        function onSuccess() {
+            var original = $btn.html();
+            $btn.html('<i class="fa fa-check" aria-hidden="true"></i>');
+            setTimeout(function () {
+                $btn.html(original);
+            }, 1200);
+        }
+
+        if (navigator.clipboard && navigator.clipboard.writeText) {
+            navigator.clipboard.writeText(email).then(onSuccess).catch(function () {});
+            return;
+        }
+
+        var tmp = $('<input type="text" />');
+        $('body').append(tmp);
+        tmp.val(email).select();
+        document.execCommand('copy');
+        tmp.remove();
+        onSuccess();
+    });
 	
     // FUN FACTS   
 
