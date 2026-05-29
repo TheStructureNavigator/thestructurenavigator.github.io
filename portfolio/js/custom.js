@@ -127,6 +127,7 @@
             var $status = $('#portfolio-page-status');
             var $pager = $('#portfolio-pager');
             var $realestateTab = $('#realestate-tab');
+            var $researchTab = $('#research-tab');
             var $galleryList = $('.gallery-list');
             var itemsPerPage = 9;
             var currentPage = 1;
@@ -143,12 +144,22 @@
             function applyPage() {
                 if (currentFilter === '.gal_realestate') {
                     $realestateTab.css('display', 'grid');
+                    $researchTab.hide();
+                    $galleryList.hide();
+                    $pager.hide();
+                    return;
+                }
+
+                if (currentFilter === '.gal_research') {
+                    $realestateTab.hide();
+                    $researchTab.css('display', 'grid');
                     $galleryList.hide();
                     $pager.hide();
                     return;
                 }
 
                 $realestateTab.hide();
+                $researchTab.hide();
                 $galleryList.show();
 
                 var $filtered = getFilteredItems();

@@ -211,6 +211,14 @@
                 <h3>Journey Through My Projects</h3>
                 <p>This portfolio is a reflection of my journey through various projects. Each one has taught me something new and helped me grow, both in skills and understanding.</p>
             </div><!-- end title -->
+
+			<div class="projects-tree-connector" aria-hidden="true">
+				<span class="connector-trunk"></span>
+				<span class="connector-rail"></span>
+				<span class="connector-branch connector-branch-left"></span>
+				<span class="connector-branch connector-branch-center"></span>
+				<span class="connector-branch connector-branch-right"></span>
+			</div>
 			
 			<div class="gallery-menu text-center row">
 				<div class="col-md-12">
@@ -291,6 +299,76 @@
 								<a class="integration-logo-slot" href="https://tabelaofert.pl/" target="_blank" rel="noopener noreferrer" aria-label="Tabela Ofert"><img src="images/investment/tabela-ofert.webp" alt="Tabela Ofert" class="integration-logo-img"></a>
 							</div>
 						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="research-tab" id="research-tab">
+				<div class="research-item">
+					<div class="research-item-left">
+						<div class="research-title-row">
+							<p class="research-item-title">Algebra of Knowledge Spaces in Ontology</p>
+							<span class="research-lang-flag" data-tooltip="Document available only in Polish language" aria-label="Document available only in Polish language">
+								<img src="images/poland.png" alt="Polish language document" class="research-lang-flag-img">
+							</span>
+						</div>
+						<p class="research-item-text">
+							A research study on algebraic knowledge-space structures within ontology design. The paper develops a structural perspective for organizing and transforming knowledge relations in formal semantic systems.
+						</p>
+					</div>
+					<div class="research-item-right">
+						<a
+							href="documents/Algebra_przestrzeni_wiedzy_w_ontologii.pdf"
+							target="_blank"
+							rel="noopener noreferrer"
+							class="research-open-btn">Open in new page</a>
+						<iframe
+							src="documents/Algebra_przestrzeni_wiedzy_w_ontologii.pdf#view=FitH"
+							title="Algebra przestrzeni wiedzy w ontologii PDF"
+							class="research-pdf-frame"
+							loading="lazy"></iframe>
+					</div>
+					<div class="research-images-block">
+						<p class="research-images-title">Knowledge Space Manifestations</p>
+						<div class="research-images-grid">
+							<a href="images/research/knowledge_center.png" class="research-image-link" data-full-image="images/research/knowledge_center.png" data-caption="Knowledge Center application view presenting a practical implementation of structured knowledge spaces." aria-label="Open figure 1 in full view">
+								<img src="images/research/knowledge_center.png" alt="Knowledge center figure" class="research-image-thumb">
+								<span class="research-image-caption">Knowledge Center application view presenting a practical implementation of structured knowledge spaces.</span>
+							</a>
+							<a href="images/research/bpogmap.png" class="research-image-link" data-full-image="images/research/bpogmap.png" data-caption="Hierarchical map of operational knowledge domains, where each area maintains its own structured information space and document context." aria-label="Open figure 2 in full view">
+								<img src="images/research/bpogmap.png" alt="Operational knowledge domains map" class="research-image-thumb">
+								<span class="research-image-caption">Hierarchical map of operational knowledge domains, where each area maintains its own structured information space and document context.</span>
+							</a>
+							<a href="images/research/part_catalog.png" class="research-image-link" data-full-image="images/research/part_catalog.png" data-caption="Focused domain view combining current operational knowledge with historical domain context for continuity and traceability." aria-label="Open figure 3 in full view">
+								<img src="images/research/part_catalog.png" alt="Domain area close-up with current and historical knowledge" class="research-image-thumb">
+								<span class="research-image-caption">Focused domain view combining current operational knowledge with historical domain context for continuity and traceability.</span>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="research-item">
+					<div class="research-item-left">
+						<div class="research-title-row">
+							<p class="research-item-title">Algebraic Approach to Process Representation</p>
+							<span class="research-lang-flag" data-tooltip="Document available only in Polish language" aria-label="Document available only in Polish language">
+								<img src="images/poland.png" alt="Polish language document" class="research-lang-flag-img">
+							</span>
+						</div>
+						<p class="research-item-text">
+							A conceptual and formal exploration of process representation through algebraic structures. This work focuses on building a consistent symbolic language for modeling process states, transitions and dependencies in complex systems.
+						</p>
+					</div>
+					<div class="research-item-right">
+						<a
+							href="documents/Algebraic_Approach_to_Process_Representation.pdf"
+							target="_blank"
+							rel="noopener noreferrer"
+							class="research-open-btn">Open in new page</a>
+						<iframe
+							src="documents/Algebraic_Approach_to_Process_Representation.pdf#view=FitH"
+							title="Algebraic Approach to Process Representation PDF"
+							class="research-pdf-frame"
+							loading="lazy"></iframe>
 					</div>
 				</div>
 			</div>
@@ -412,6 +490,42 @@
     <script src="js/custom.js"></script>
     <script>
       document.getElementById('portfolio-actual-year').textContent = new Date().getFullYear();
+
+      (function () {
+        var links = document.querySelectorAll('.research-image-link');
+        if (!links.length) return;
+
+        var overlay = document.createElement('div');
+        overlay.className = 'research-lightbox';
+        overlay.innerHTML = '<button type="button" class="research-lightbox-close" aria-label="Close image preview">×</button><img class="research-lightbox-image" alt="Research figure full view" />';
+        document.body.appendChild(overlay);
+
+        var img = overlay.querySelector('.research-lightbox-image');
+        var closeBtn = overlay.querySelector('.research-lightbox-close');
+
+        function closeLightbox() {
+          overlay.classList.remove('is-open');
+          img.removeAttribute('src');
+        }
+
+        links.forEach(function (link) {
+          link.addEventListener('click', function (event) {
+            var fullImage = link.getAttribute('data-full-image');
+            if (!fullImage) return;
+            event.preventDefault();
+            img.src = fullImage;
+            overlay.classList.add('is-open');
+          });
+        });
+
+        overlay.addEventListener('click', function (event) {
+          if (event.target === overlay) closeLightbox();
+        });
+        closeBtn.addEventListener('click', closeLightbox);
+        document.addEventListener('keydown', function (event) {
+          if (event.key === 'Escape') closeLightbox();
+        });
+      })();
     </script>
 </body>
 </html>
