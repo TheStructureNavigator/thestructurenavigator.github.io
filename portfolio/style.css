@@ -2953,6 +2953,12 @@ body.politics_version .slider-inner p {
     color: rgba(255, 255, 255, 0.78);
 }
 
+@media (max-width: 767px) {
+    body.politics_version .knowledge-tab-image-wrap {
+        grid-template-columns: 1fr;
+    }
+}
+
 /* Hero slider mobile readability + stable arrows on touch */
 body.politics_version .slider-inner {
     padding-left: 4.2rem;
@@ -4309,7 +4315,7 @@ body.politics_version .dmtop.show {
     }
 
     body.politics_version .knowledge-tab-image-wrap {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 
     body.politics_version .knowledge-tab-two-col {
@@ -4322,6 +4328,10 @@ body.politics_version .dmtop.show {
         padding-left: 0;
         border-top: 1px solid rgba(190, 210, 230, 0.2);
         padding-top: 0.55rem;
+    }
+
+    body.politics_version .knowledge-tab-image {
+        height: 185px;
     }
 
     body.politics_version .research-item-title,
