@@ -3622,6 +3622,11 @@ body.politics_version .dmtop.show {
 
     body.politics_version .realestate-tab {
         grid-template-columns: 1fr;
+        grid-template-areas:
+            "top-right"
+            "top-left"
+            "divider"
+            "bottom-left";
     }
 
     body.politics_version .realestate-top-left,
@@ -3661,46 +3666,41 @@ body.politics_version .dmtop.show {
 
     body.politics_version .integration-logo-slot {
         font-size: 0.58rem;
-        min-height: 2rem;
-        padding: 0.3rem 0.5rem;
-    }
-
-    body.politics_version .integration-group:first-child .integration-logos {
-        display: flex;
-        flex-wrap: nowrap;
-        justify-content: flex-start;
-        overflow-x: auto;
-        gap: 0.48rem;
-        padding-bottom: 0.2rem;
+        min-height: 2.1rem;
+        padding: 0.24rem 0.4rem;
     }
 
     body.politics_version .integration-group:first-child .integration-logo-slot {
-        min-height: 175px;
-        min-width: 210px;
-        max-width: 210px;
-        flex: 0 0 210px;
-        padding: 0.24rem 0.3rem;
+        min-height: 118px;
+        min-width: 132px;
+        max-width: 132px;
+        padding: 0.18rem 0.22rem;
     }
 
     body.politics_version .integration-logo-img {
-        height: 24px;
-        max-width: 140px;
+        height: 16px;
+        max-width: 90px;
     }
 
     body.politics_version .integration-group:first-child .integration-logo-img {
         width: 100%;
         height: 100%;
         max-width: 100%;
-        max-height: 126px;
+        max-height: 88px;
     }
 
     body.politics_version .integration-group:nth-child(2) .integration-logo-slot {
-        min-height: 2.7rem;
-        padding: 0.42rem 0.68rem;
+        min-height: 2.2rem;
+        padding: 0.26rem 0.42rem;
     }
 
     body.politics_version .integration-group:nth-child(2) .integration-logo-img {
-        height: 26px;
-        max-width: 150px;
+        height: 18px;
+        max-width: 102px;
+    }
+
+    body.politics_version .integration-logos {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 0.34rem;
     }
 }
