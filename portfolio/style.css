@@ -3504,13 +3504,17 @@ body.politics_version .integration-group:first-child .integration-logo-img {
 }
 
 body.politics_version .integration-group:nth-child(2) .integration-logo-slot {
-    min-height: 2.7rem;
-    padding: 0.42rem 0.68rem;
+    min-height: 3.6rem;
+    padding: 0.58rem 0.82rem;
+}
+
+body.politics_version .integration-group:nth-child(2) .integration-logos {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 
 body.politics_version .integration-group:nth-child(2) .integration-logo-img {
-    height: 26px;
-    max-width: 150px;
+    height: 34px;
+    max-width: 100%;
     filter: none;
 }
 
