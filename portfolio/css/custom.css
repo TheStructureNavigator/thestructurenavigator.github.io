@@ -34,7 +34,9 @@ body.politics_version {
   display: inline-flex;
   align-items: center;
   gap: 0.45rem;
-  margin-left: 0.85rem;
+  margin-left: auto;
+  margin-right: 0.85rem;
+  order: 2;
 }
 
 .language-switcher__button {
@@ -66,7 +68,6 @@ body.politics_version {
   width: 1.32rem;
   height: 0.92rem;
   border-radius: 2px;
-  box-shadow: 0 0 0 1px rgba(34, 34, 34, 0.18);
 }
 
 #mainNav .navbar-nav .nav-link {

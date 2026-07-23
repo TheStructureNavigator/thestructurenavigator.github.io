@@ -1431,7 +1431,6 @@ input, select, textarea {
 			width: 1.32rem;
 			height: 0.92rem;
 			border-radius: 2px;
-			box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.28);
 		}
 
 		body.is-article-visible #header {
