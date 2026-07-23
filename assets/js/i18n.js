@@ -418,16 +418,16 @@
       return;
     }
 
+    var assetBase = getPageKey() === "portfolio" ? "../images/flags/" : "images/flags/";
+
     switchers.forEach(function (switcher) {
       switcher.setAttribute("aria-label", translations[language].switcherLabel);
       switcher.innerHTML =
         '<button type="button" class="language-switcher__button' + (language === "pl" ? " is-active" : "") + '" data-language="pl" aria-pressed="' + (language === "pl") + '">' +
-          '<span class="language-switcher__flag" aria-hidden="true">🇵🇱</span>' +
-          '<span class="language-switcher__code">PL</span>' +
+          '<img class="language-switcher__flag" src="' + assetBase + 'pl.svg" alt="" aria-hidden="true" />' +
         "</button>" +
         '<button type="button" class="language-switcher__button' + (language === "en" ? " is-active" : "") + '" data-language="en" aria-pressed="' + (language === "en") + '">' +
-          '<span class="language-switcher__flag" aria-hidden="true">🇬🇧</span>' +
-          '<span class="language-switcher__code">EN</span>' +
+          '<img class="language-switcher__flag" src="' + assetBase + 'en.svg" alt="" aria-hidden="true" />' +
         "</button>";
     });
 

@@ -1391,58 +1391,55 @@ input, select, textarea {
 			border-left: 0;
 		}
 
-		#header .language-switcher {
+		.language-switcher--corner {
+			position: fixed;
+			top: 1.35rem;
+			right: 1.35rem;
+			z-index: 10;
 			display: inline-flex;
 			align-items: center;
 			justify-content: center;
-			gap: 0.45rem;
-			margin-top: 1rem;
-			padding: 0.35rem 0.45rem;
-			border: 1px solid rgba(255, 255, 255, 0.22);
+			gap: 0.4rem;
+			padding: 0.28rem;
+			border: 1px solid rgba(255, 255, 255, 0.18);
 			border-radius: 999px;
-			background: rgba(255, 255, 255, 0.05);
-			backdrop-filter: blur(10px);
-			-webkit-backdrop-filter: blur(10px);
+			background: rgba(18, 21, 24, 0.5);
+			backdrop-filter: blur(12px);
+			-webkit-backdrop-filter: blur(12px);
+			box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.16);
 		}
 
 		.language-switcher__button {
 			display: inline-flex;
 			align-items: center;
-			gap: 0.38rem;
-			min-width: 4.4rem;
-			padding: 0.42rem 0.7rem;
-			border: 1px solid rgba(255, 255, 255, 0.16);
+			justify-content: center;
+			width: 2.45rem;
+			height: 2.45rem;
+			padding: 0.22rem;
+			border: 1px solid transparent;
 			border-radius: 999px;
 			background: transparent;
-			color: rgba(255, 255, 255, 0.86);
-			font-size: 0.68rem;
-			letter-spacing: 0.14rem;
-			text-transform: uppercase;
 			cursor: pointer;
-			transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
+			transition: background-color 0.2s ease, border-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
 		}
 
 		.language-switcher__button:hover {
-			background: rgba(255, 255, 255, 0.1);
-			border-color: rgba(255, 255, 255, 0.35);
-			color: #ffffff;
+			background: rgba(255, 255, 255, 0.08);
+			border-color: rgba(255, 255, 255, 0.18);
 			transform: translateY(-1px);
 		}
 
 		.language-switcher__button.is-active {
-			background: rgba(255, 255, 255, 0.16);
-			border-color: rgba(255, 255, 255, 0.46);
-			color: #ffffff;
-			box-shadow: 0 0 1rem rgba(255, 255, 255, 0.08);
+			background: rgba(255, 255, 255, 0.12);
+			border-color: rgba(255, 255, 255, 0.4);
+			box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.08);
 		}
 
 		.language-switcher__flag {
-			font-size: 0.9rem;
-			line-height: 1;
-		}
-
-		.language-switcher__code {
-			line-height: 1;
+			display: block;
+			width: 1.6rem;
+			height: 1.6rem;
+			border-radius: 999px;
 		}
 
 		body.is-article-visible #header {
@@ -1524,8 +1521,9 @@ input, select, textarea {
 					padding: 2.5rem 0;
 				}
 
-				#header .language-switcher {
-					margin-top: 0.9rem;
+				.language-switcher--corner {
+					top: 0.85rem;
+					right: 0.85rem;
 				}
 
 				#header nav ul {
