@@ -447,7 +447,8 @@
     return "home";
   }
 
-  function applyLanguage(language, persist) {
+  function applyLanguage(language, persist, options) {
+    options = options || {};
     var normalizedLanguage = normalizeLanguage(language) || "en";
     var pageKey = getPageKey();
     var pageTranslations = translations[normalizedLanguage][pageKey];
@@ -469,12 +470,29 @@
       pageKey === "portfolio" &&
       window.jQuery &&
       window.jQuery.fn &&
-      window.jQuery.fn.slick
+      window.jQuery.fn.slick &&
+      !options.skipSliderReset
     ) {
       var slider = window.jQuery(".ct-slick-homepage");
       if (slider.length && slider.hasClass("slick-initialized")) {
         slider.slick("slickGoTo", 0, true);
       }
+    }
+
+    if (pageKey === "portfolio" && !options.skipDeferredSync) {
+      window.setTimeout(function () {
+        applyLanguage(normalizedLanguage, false, {
+          skipDeferredSync: true,
+          skipSliderReset: true
+        });
+      }, 0);
+
+      window.setTimeout(function () {
+        applyLanguage(normalizedLanguage, false, {
+          skipDeferredSync: true,
+          skipSliderReset: true
+        });
+      }, 300);
     }
 
     renderSwitchers(normalizedLanguage);
