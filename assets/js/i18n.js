@@ -17,7 +17,7 @@
         },
         texts: {
           "#header .content .inner h1": "The Structure Navigator",
-          "#header .content .inner p": "A gateway to my personal information and project links, offering a glimpse into my digital journey and creative endeavors",
+          "#header .content .inner p": "CRM systems, solution architecture, automation, and computer modelling of systems and processes",
           "#header nav ul li:nth-child(1) a": "About",
           "#header nav ul li:nth-child(2) a": "Portfolio",
           "#header nav ul li:nth-child(3) a": "Contact",
@@ -191,7 +191,7 @@
         },
         texts: {
           "#header .content .inner h1": "The Structure Navigator",
-          "#header .content .inner p": "Portfolio projektów, obszarów pracy i sposobu myślenia o systemach, procesach i architekturze rozwiązań",
+          "#header .content .inner p": "Systemy CRM, architektura rozwiązań, automatyzacja i modelowanie komputerowe układów oraz procesów",
           "#header nav ul li:nth-child(1) a": "O mnie",
           "#header nav ul li:nth-child(2) a": "Portfolio",
           "#header nav ul li:nth-child(3) a": "Kontakt",
