@@ -243,7 +243,7 @@
         texts: {
           "#mainNav .navbar-nav .nav-item:nth-child(1) .nav-link": "← Powrót do strony głównej",
           "#mainNav .navbar-nav .nav-item:nth-child(2) .nav-link": "Start",
-          "#mainNav .navbar-nav .nav-item:nth-child(3) .nav-link": "Specjalizacje",
+          "#mainNav .navbar-nav .nav-item:nth-child(3) .nav-link": "Obszary",
           "#mainNav .navbar-nav .nav-item:nth-child(4) .nav-link": "Projekty",
           "#mainNav .navbar-nav .nav-item:nth-child(5) .nav-link": "O mnie",
           "#mainNav .navbar-nav .nav-item:nth-child(6) .nav-link": "Kontakt",
