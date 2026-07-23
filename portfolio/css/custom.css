@@ -30,6 +30,54 @@ body.politics_version {
   justify-content: flex-end;
 }
 
+#mainNav .language-switcher {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  margin-left: 1rem;
+  padding: 0.2rem;
+  border: 1px solid rgba(18, 181, 119, 0.22);
+  border-radius: 999px;
+  background: rgba(18, 181, 119, 0.08);
+}
+
+.language-switcher__button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  min-width: 4.15rem;
+  padding: 0.42rem 0.68rem;
+  border: 1px solid transparent;
+  border-radius: 999px;
+  background: transparent;
+  color: rgba(34, 34, 34, 0.88);
+  font-size: 0.66rem;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.language-switcher__button:hover {
+  background: rgba(18, 181, 119, 0.14);
+  color: #1f1f1f;
+}
+
+.language-switcher__button.is-active {
+  background: #12b577a8;
+  color: #ffffff;
+  box-shadow: 0 8px 18px rgba(18, 181, 119, 0.18);
+}
+
+.language-switcher__flag {
+  font-size: 0.92rem;
+  line-height: 1;
+}
+
+.language-switcher__code {
+  line-height: 1;
+}
+
 #mainNav .navbar-nav .nav-link {
   color: rgba(34, 34, 34, 0.9);
   border-radius: 4px;
@@ -73,5 +121,14 @@ body.politics_version {
 
   #mainNav .navbar-brand img {
     width: 64px !important;
+  }
+
+  #mainNav .navbar-collapse {
+    align-items: flex-start;
+  }
+
+  #mainNav .language-switcher {
+    margin-top: 0.75rem;
+    margin-left: 0;
   }
 }
