@@ -73,12 +73,12 @@
           "#mainNav .navbar-nav .nav-item:nth-child(4) .nav-link": "Projects",
           "#mainNav .navbar-nav .nav-item:nth-child(5) .nav-link": "About",
           "#mainNav .navbar-nav .nav-item:nth-child(6) .nav-link": "Contact",
-          ".ct-slick-homepage .item:nth-child(1) h1": "Websites, CRM, and Real Estate Integrations",
-          ".ct-slick-homepage .item:nth-child(1) p": "I build and maintain a website platform and a CRM system for a real estate franchise network. I create integrations with international property portals and tools so data flows between website, CRM, and listings are automated, consistent, and ready to scale.",
-          ".ct-slick-homepage .item:nth-child(2) h1": "A Knowledge Hub at the Core of Team Work",
-          ".ct-slick-homepage .item:nth-child(2) p": "I design and develop a section-based knowledge hub that organizes processes, standards, and decisions. It serves as a central operational workspace that supports onboarding, delivery quality, and fast access to key information.",
-          ".ct-slick-homepage .item:nth-child(3) h1": "Algebraic Processes and Knowledge Spaces",
-          ".ct-slick-homepage .item:nth-child(3) p": "I develop a research and project domain around algebraic processes, structural modeling, and knowledge spaces. I combine mathematics, systems engineering, and automation to build frameworks for analyzing complex problems.",
+          ".ct-slick-homepage .item[data-slide-key='crm'] h1": "Websites, CRM, and Real Estate Integrations",
+          ".ct-slick-homepage .item[data-slide-key='crm'] p": "I build and maintain a website platform and a CRM system for a real estate franchise network. I create integrations with international property portals and tools so data flows between website, CRM, and listings are automated, consistent, and ready to scale.",
+          ".ct-slick-homepage .item[data-slide-key='knowledge'] h1": "A Knowledge Hub at the Core of Team Work",
+          ".ct-slick-homepage .item[data-slide-key='knowledge'] p": "I design and develop a section-based knowledge hub that organizes processes, standards, and decisions. It serves as a central operational workspace that supports onboarding, delivery quality, and fast access to key information.",
+          ".ct-slick-homepage .item[data-slide-key='research'] h1": "Algebraic Processes and Knowledge Spaces",
+          ".ct-slick-homepage .item[data-slide-key='research'] p": "I develop a research and project domain around algebraic processes, structural modeling, and knowledge spaces. I combine mathematics, systems engineering, and automation to build frameworks for analyzing complex problems.",
           "#services .section-title h3": "Navigating My Work Landscape",
           "#services .section-title p": "This journey takes me through different areas of focus, where I apply my skills and continuously learn to provide effective solutions.",
           "#services .col-md-4:nth-child(1) h2": "Software Engineering & System Architecture",
@@ -247,12 +247,12 @@
           "#mainNav .navbar-nav .nav-item:nth-child(4) .nav-link": "Projekty",
           "#mainNav .navbar-nav .nav-item:nth-child(5) .nav-link": "O mnie",
           "#mainNav .navbar-nav .nav-item:nth-child(6) .nav-link": "Kontakt",
-          ".ct-slick-homepage .item:nth-child(1) h1": "Platformy webowe, CRM i integracje dla rynku nieruchomości",
-          ".ct-slick-homepage .item:nth-child(1) p": "Projektuję i rozwijam platformę webową oraz system CRM dla sieci franczyzowej biur nieruchomości. Tworzę integracje z portalami i narzędziami zewnętrznymi, dzięki którym dane między stroną, CRM-em i ogłoszeniami przepływają automatycznie, spójnie i w sposób gotowy do dalszego skalowania.",
-          ".ct-slick-homepage .item:nth-child(2) h1": "KnowledgeCenter jako centrum pracy operacyjnej",
-          ".ct-slick-homepage .item:nth-child(2) p": "Projektuję i rozwijam modułowe centrum wiedzy, które porządkuje procesy, standardy, decyzje i kontekst operacyjny. To praktyczne środowisko pracy wspierające onboarding, jakość realizacji i szybki dostęp do kluczowych informacji.",
-          ".ct-slick-homepage .item:nth-child(3) h1": "Procesy algebraiczne i przestrzenie wiedzy",
-          ".ct-slick-homepage .item:nth-child(3) p": "Rozwijam własny obszar badawczo-projektowy wokół procesów algebraicznych, modelowania strukturalnego i przestrzeni wiedzy. Łączę matematykę, inżynierię systemów i automatyzację, by budować ramy do analizy złożonych problemów.",
+          ".ct-slick-homepage .item[data-slide-key='crm'] h1": "Platformy webowe, CRM i integracje dla rynku nieruchomości",
+          ".ct-slick-homepage .item[data-slide-key='crm'] p": "Projektuję i rozwijam platformę webową oraz system CRM dla sieci franczyzowej biur nieruchomości. Tworzę integracje z portalami i narzędziami zewnętrznymi, dzięki którym dane między stroną, CRM-em i ogłoszeniami przepływają automatycznie, spójnie i w sposób gotowy do dalszego skalowania.",
+          ".ct-slick-homepage .item[data-slide-key='knowledge'] h1": "KnowledgeCenter jako centrum pracy operacyjnej",
+          ".ct-slick-homepage .item[data-slide-key='knowledge'] p": "Projektuję i rozwijam modułowe centrum wiedzy, które porządkuje procesy, standardy, decyzje i kontekst operacyjny. To praktyczne środowisko pracy wspierające onboarding, jakość realizacji i szybki dostęp do kluczowych informacji.",
+          ".ct-slick-homepage .item[data-slide-key='research'] h1": "Procesy algebraiczne i przestrzenie wiedzy",
+          ".ct-slick-homepage .item[data-slide-key='research'] p": "Rozwijam własny obszar badawczo-projektowy wokół procesów algebraicznych, modelowania strukturalnego i przestrzeni wiedzy. Łączę matematykę, inżynierię systemów i automatyzację, by budować ramy do analizy złożonych problemów.",
           "#services .section-title h3": "Obszary pracy i zainteresowań",
           "#services .section-title p": "To obszary, w których rozwijam się zawodowo i badawczo, łącząc technologię, myślenie systemowe i analizę procesów.",
           "#services .col-md-4:nth-child(1) h2": "Inżynieria oprogramowania i architektura systemów",
@@ -463,6 +463,18 @@
       pageTranslations.attrs.forEach(function (entry) {
         setAttribute(entry.selector, entry.attr, entry.value);
       });
+    }
+
+    if (
+      pageKey === "portfolio" &&
+      window.jQuery &&
+      window.jQuery.fn &&
+      window.jQuery.fn.slick
+    ) {
+      var slider = window.jQuery(".ct-slick-homepage");
+      if (slider.length && slider.hasClass("slick-initialized")) {
+        slider.slick("slickGoTo", 0, true);
+      }
     }
 
     renderSwitchers(normalizedLanguage);
