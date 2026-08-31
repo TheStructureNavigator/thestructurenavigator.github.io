@@ -112,6 +112,9 @@ body.politics_version {
 
 @media (max-width: 991.98px) {
   #mainNav .container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
     padding-left: 0.75rem;
     padding-right: 0.75rem;
   }
@@ -121,15 +124,24 @@ body.politics_version {
   }
 
   #mainNav .navbar-collapse {
+    order: 4;
+    width: 100%;
+    flex-basis: 100%;
     align-items: flex-start;
     padding-right: 0;
+    padding-top: 0.85rem;
   }
 
   #mainNav .language-switcher {
-    right: 0.75rem;
+    position: static;
+    order: 2;
+    margin-left: auto;
+    margin-right: 0.75rem;
+    transform: none;
   }
 
   #mainNav .navbar-toggler {
-    margin-right: 3.5rem;
+    order: 3;
+    margin-right: 0;
   }
 }

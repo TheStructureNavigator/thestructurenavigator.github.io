@@ -137,7 +137,7 @@
           ".astronomy-tab-title": "Observational Astronomy & Astrophotography",
           ".astronomy-tab-text-primary": "This area combines observational astronomy, astrophotography, and astronomical data analysis. It covers observation planning based on object positions and sky conditions, acquisition setup, image capture, and subsequent processing and analysis.",
           ".astronomy-tab-text-secondary": "An important part of this work is the use of computational methods and the development of custom tools supporting the entire observational workflow from target selection and visibility analysis to session planning, data acquisition, organization, and processing.",
-          ".astronomy-tab-note": "The area is developed alongside practical observations and serves as an experimental space at the intersection of <strong>astronomy, mathematics, data analysis, and software engineering</strong>."
+          ".astronomy-tab-note": "The area is developed alongside practical observations and serves as an experimental space at the intersection of astronomy, mathematics, data analysis, and software engineering."
         },
         attrs: [
           { selector: "html", attr: "lang", value: "en" },
@@ -315,7 +315,7 @@
           ".astronomy-tab-title": "Astronomia Obserwacyjna i Astrofotografia",
           ".astronomy-tab-text-primary": "Obszar laczacy astronomie obserwacyjna, astrofotografie oraz analize danych astronomicznych. Obejmuje planowanie obserwacji na podstawie polozenia obiektow i warunkow nieba, dobor parametrow akwizycji, rejestracje materialu oraz jego pozniejsze przetwarzanie i analize.",
           ".astronomy-tab-text-secondary": "Istotna czescia tego kierunku jest wykorzystanie metod obliczeniowych i tworzenie wlasnych narzedzi wspierajacych caly proces obserwacyjny od wyboru obiektu i okreslenia jego widocznosci, przez przygotowanie sesji, az po organizacje i analize zebranego materialu.",
-          ".astronomy-tab-note": "Obszar jest rozwijany rownolegle z praktycznymi obserwacjami i stanowi przestrzen do eksperymentowania na styku <strong>astronomii, matematyki, analizy danych i inzynierii oprogramowania</strong>."
+          ".astronomy-tab-note": "Obszar jest rozwijany rownolegle z praktycznymi obserwacjami i stanowi przestrzen do eksperymentowania na styku astronomii, matematyki, analizy danych i inzynierii oprogramowania."
         },
         attrs: [
           { selector: "html", attr: "lang", value: "pl" },
