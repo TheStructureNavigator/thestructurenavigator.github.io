@@ -2979,7 +2979,7 @@ body.politics_version #home .slick-next {
     }
 
 body.politics_version #home {
-    background-image: url("../images/background-photo.webp");
+    background-image: url("../../images/background-photo.webp");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
