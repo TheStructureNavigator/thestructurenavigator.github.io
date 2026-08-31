@@ -32,9 +32,7 @@
           "#about .about-right .button.small[href='portfolio/index.html']": "Dive deeper",
           "#contact .major": "Contact",
           ".contact-copy-btn span": "Copy mail",
-          "#contact .contact-platform-row:nth-of-type(2) .about-line-soft": "Find me at",
-          "#contact .contact-platform-row:nth-of-type(3) .about-line-soft": "Find me at",
-          "#contact .contact-platform-row:nth-of-type(4) .about-line-soft": "Find me at",
+          "#contact .contact-platform-heading": "Find me at",
           ".contact-form-hint": "Or fill the form and send me a message <span class=\"contact-form-arrow\" aria-hidden=\"true\">→</span>"
         },
         attrs: [
@@ -91,7 +89,7 @@
           "#services .col-md-4:nth-child(4) h2": "Process Automation & AI",
           "#services .col-md-4:nth-child(4) p": "Driven by a passion for automating processes and utilizing AI to enhance efficiency across various business areas, improving operations and enabling smarter decision-making.",
           "#services .col-md-4:nth-child(5) h2": "Astronomy & Astrophotography",
-          "#services .col-md-4:nth-child(5) p": "Interested in observational astronomy and astrophotography, exploring the night sky through direct observation and capturing celestial objects in images.",
+          "#services .col-md-4:nth-child(5) p": "An area of interest focused on astronomical observations, astrophotography, observational data analysis, and building my own tools to support planning and carrying out observation sessions.",
           "#services .col-md-4:nth-child(6) h2": "Mathematics & Process Algebra",
           "#services .col-md-4:nth-child(6) p": "Exploring mathematical structures, process algebra, graph theory, optimization, and abstract models used to describe, analyze, and improve complex systems and business processes.",
           "#portfolio .section-title h3": "Journey Through My Projects",
@@ -137,7 +135,7 @@
           ".knowledge-tab-two-col:nth-of-type(3) .knowledge-tab-col:nth-child(2) .knowledge-tab-text": "This is not only digitalization, but organizational innovation that improves information flow, collaboration, and sustainable improvement across the company.",
           ".knowledge-tab > .knowledge-tab-text:last-of-type": "<strong>KnowledgeCenter already reduces more than 3,000 labor hours per year compared with previous process execution, by improving and accelerating the same operational workflows.</strong> <strong>Estimated based on process time reductions across implemented workflows.</strong> <strong>Beyond shortening the duration of real operational processes, it also enables new activities that were previously too time-consuming and practically impossible to execute consistently.</strong> <strong>It provides immediate access to actionable knowledge across multiple topics, where obtaining the same visibility before was time-intensive and often practically unfeasible.</strong> <strong>It is a working organizational asset that continues to deliver savings and value even when I am not present.</strong>",
           ".astronomy-tab-title": "Astronomy & Astrophotography",
-          ".astronomy-tab-text:nth-of-type(1)": "Observational astronomy and astrophotography are a personal extension of the same curiosity that drives my technical work: understanding structures, patterns, and systems that are difficult to see at first glance.",
+          ".astronomy-tab-text:nth-of-type(1)": "An area of interest focused on astronomical observations, astrophotography, observational data analysis, and building my own tools to support planning and carrying out observation sessions.",
           ".astronomy-tab-text:nth-of-type(2)": "This area is about patient observation, planning sessions around sky conditions, and capturing celestial objects in a way that turns distant phenomena into something directly explorable and tangible.",
           ".astronomy-tab-note": "A visual project space for this part of my work is now being assembled and will grow with future observations and image captures."
         },
@@ -212,9 +210,7 @@
           "#about .about-right .button.small[href='portfolio/index.html']": "Zobacz portfolio",
           "#contact .major": "Kontakt",
           ".contact-copy-btn span": "Kopiuj mail",
-          "#contact .contact-platform-row:nth-of-type(2) .about-line-soft": "Znajdziesz mnie na",
-          "#contact .contact-platform-row:nth-of-type(3) .about-line-soft": "Znajdziesz mnie na",
-          "#contact .contact-platform-row:nth-of-type(4) .about-line-soft": "Znajdziesz mnie na",
+          "#contact .contact-platform-heading": "Znajdziesz mnie na",
           ".contact-form-hint": "Lub napisz do mnie przez formularz <span class=\"contact-form-arrow\" aria-hidden=\"true\">→</span>"
         },
         attrs: [
@@ -317,7 +313,7 @@
           ".knowledge-tab-two-col:nth-of-type(3) .knowledge-tab-col:nth-child(2) .knowledge-tab-text": "To nie tylko digitalizacja, ale również innowacja organizacyjna, która poprawia przepływ informacji, współpracę i zdolność do trwałego doskonalenia.",
           ".knowledge-tab > .knowledge-tab-text:last-of-type": "<strong>KnowledgeCenter już dziś uwalnia ponad 3 000 roboczogodzin rocznie w porównaniu z wcześniejszym sposobem realizacji tych samych procesów operacyjnych.</strong> <strong>Szacunek opiera się na skróceniu czasu realizacji procesów w rozwiązaniach, które zostały już wdrożone.</strong> <strong>Poza skróceniem czasu realizacji bieżących działań umożliwia także zadania, które wcześniej były zbyt czasochłonne, by wykonywać je regularnie i konsekwentnie.</strong> <strong>Daje natychmiastowy dostęp do użytecznej wiedzy w wielu obszarach, gdzie wcześniej uzyskanie podobnej widoczności wymagało dużego nakładu czasu i było znacznie trudniejsze.</strong> <strong>To działający zasób organizacyjny, który generuje wartość i oszczędności także wtedy, gdy nie ma mnie na miejscu.</strong>",
           ".astronomy-tab-title": "Astronomia i astrofotografia",
-          ".astronomy-tab-text:nth-of-type(1)": "Astronomia obserwacyjna i astrofotografia sa dla mnie osobistym przedluzeniem tej samej ciekawosci, ktora napedza moja prace techniczna: rozumienia struktur, wzorcow i systemow, ktorych nie widac od razu.",
+          ".astronomy-tab-text:nth-of-type(1)": "Obszar zainteresowan obejmujacy obserwacje astronomiczne, astrofotografie, analize danych obserwacyjnych oraz rozwoj wlasnych narzedzi wspierajacych planowanie i realizacje obserwacji.",
           ".astronomy-tab-text:nth-of-type(2)": "To obszar cierpliwej obserwacji, planowania sesji pod warunki nieba oraz rejestrowania obiektow niebieskich w sposob, ktory pozwala zamienic odlegle zjawiska w cos namacalnego i mozliwego do dalszej eksploracji.",
           ".astronomy-tab-note": "Przestrzen projektowa dla tej czesci mojej pracy jest wlasnie budowana i bedzie rozwijana wraz z kolejnymi obserwacjami i zebranym materialem."
         },
