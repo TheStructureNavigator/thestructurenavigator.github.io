@@ -12,13 +12,12 @@
     IMPORT FILES
 -------------------------------------------------------------------*/
 
-@import url(css/animate.css);
-@import url(css/slick.min.css);
-@import url(css/animated-slider.css);
-@import url(css/flaticon.css);
-@import url(css/prettyPhoto.css);
-@import url(css/owl.carousel.css);
-@import url(css/font-awesome.min.css);
+@import url(animate.css);
+@import url(slick.min.css);
+@import url(animated-slider.css);
+@import url(flaticon.css);
+@import url(owl.carousel.css);
+@import url(font-awesome.min.css);
 
 /*------------------------------------------------------------------
     SKELETON
@@ -38,7 +37,7 @@ html, body{
 }
 
 body.demos .section {
-    background: url(images/bg.png) repeat top center #f2f3f5;
+    background: url(../images/bg.png) repeat top center #f2f3f5;
 }
 
 body.demos .section-title img {
@@ -1499,7 +1498,7 @@ hr.invis1 {
     width: 100%;
     height: 100%;
     position: relative;
-    background: url("uploads/code.jpg") no-repeat;
+    background: url("../uploads/code.jpg") no-repeat;
 }
 
 .design-wrapper {
@@ -1520,7 +1519,7 @@ hr.invis1 {
     position: relative;
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
-    background: url("uploads/design.jpg") no-repeat;
+    background: url("../uploads/design.jpg") no-repeat;
 }
 
 .filter-button-group{
@@ -2281,7 +2280,7 @@ select.mobile-device {
 }
 
 #contact {
-    background: url(images/bg.png) no-repeat center center #333333;
+    background: url(../images/bg.png) no-repeat center center #333333;
 }
 
 
