@@ -2979,10 +2979,19 @@ body.politics_version #home .slick-next {
     }
 
 body.politics_version #home {
+    position: relative;
     background-image: url("../../images/background-photo.webp");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+body.politics_version #home::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(130deg, rgba(8, 11, 15, 0.66) 0%, rgba(10, 13, 17, 0.5) 45%, rgba(6, 8, 11, 0.7) 100%);
+    z-index: 0;
 }
 
 body.politics_version #home .ct-slick-homepage,
@@ -2999,6 +3008,11 @@ body.politics_version #home .ct-u-display-tablex > .inner {
 body.politics_version #home .ct-header.item::before,
 body.politics_version #home .ct-u-display-tablex > .inner::before {
     display: none !important;
+}
+
+body.politics_version #home .ct-slick-homepage {
+    position: relative;
+    z-index: 1;
 }
 
     body.politics_version #home .slick-prev {
