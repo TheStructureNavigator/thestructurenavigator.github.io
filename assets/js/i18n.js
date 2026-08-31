@@ -134,10 +134,10 @@
           ".knowledge-tab-two-col:nth-of-type(3) .knowledge-tab-col:nth-child(2) .knowledge-tab-subtitle": "Innovation",
           ".knowledge-tab-two-col:nth-of-type(3) .knowledge-tab-col:nth-child(2) .knowledge-tab-text": "This is not only digitalization, but organizational innovation that improves information flow, collaboration, and sustainable improvement across the company.",
           ".knowledge-tab > .knowledge-tab-text:last-of-type": "<strong>KnowledgeCenter already reduces more than 3,000 labor hours per year compared with previous process execution, by improving and accelerating the same operational workflows.</strong> <strong>Estimated based on process time reductions across implemented workflows.</strong> <strong>Beyond shortening the duration of real operational processes, it also enables new activities that were previously too time-consuming and practically impossible to execute consistently.</strong> <strong>It provides immediate access to actionable knowledge across multiple topics, where obtaining the same visibility before was time-intensive and often practically unfeasible.</strong> <strong>It is a working organizational asset that continues to deliver savings and value even when I am not present.</strong>",
-          ".astronomy-tab-title": "Astronomy & Astrophotography",
-          ".astronomy-tab-text:nth-of-type(1)": "An area of interest focused on astronomical observations, astrophotography, observational data analysis, and building my own tools to support planning and carrying out observation sessions.",
-          ".astronomy-tab-text:nth-of-type(2)": "This area is about patient observation, planning sessions around sky conditions, and capturing celestial objects in a way that turns distant phenomena into something directly explorable and tangible.",
-          ".astronomy-tab-note": "A visual project space for this part of my work is now being assembled and will grow with future observations and image captures."
+          ".astronomy-tab-title": "Observational Astronomy & Astrophotography",
+          ".astronomy-tab-text:nth-of-type(1)": "This area combines observational astronomy, astrophotography, and astronomical data analysis. It covers observation planning based on object positions and sky conditions, acquisition setup, image capture, and subsequent processing and analysis.",
+          ".astronomy-tab-text:nth-of-type(2)": "An important part of this work is the use of computational methods and the development of custom tools supporting the entire observational workflow from target selection and visibility analysis to session planning, data acquisition, organization, and processing.",
+          ".astronomy-tab-note": "The area is developed alongside practical observations and serves as an experimental space at the intersection of <strong>astronomy, mathematics, data analysis, and software engineering</strong>."
         },
         attrs: [
           { selector: "html", attr: "lang", value: "en" },
@@ -273,7 +273,7 @@
           "#portfolio .section-title h3": "Wybrane projekty i obszary pracy",
           "#portfolio .section-title p": "Poniżej pokazuję projekty i kierunki, w których łączę architekturę systemów, automatyzację, integracje oraz własny obszar badawczy.",
           ".filter-button-group button:nth-child(1)": "Strona i CRM nieruchomości",
-          ".filter-button-group button:nth-child(2)": "Knowledge Center",
+          ".filter-button-group button:nth-child(2)": "Centrum Wiedzy",
           ".filter-button-group button:nth-child(3)": "Badania",
           ".filter-button-group button:nth-child(4)": "Astronomia i astrofotografia",
           ".realestate-lead": "TWÓRCA I OPIEKUN PLATFORMY WWW DLA SIECI FRANCZYZOWEJ BIUR NIERUCHOMOŚCI ORAZ SYSTEMU CRM WSPIERAJĄCEGO SPRZEDAŻ I OBSŁUGĘ OFERT",
@@ -297,7 +297,7 @@
           ".research-images-grid a:nth-child(8) .research-image-caption": "Przekrojowy widok przestrzeni dla wyszukiwanej frazy QS (Quality Control), odsłaniający strukturę domeny wybraną przez kontekst klasyfikacji.",
           ".research-item:nth-child(2) .research-item-text": "Koncepcyjne i formalne ujęcie reprezentacji procesów poprzez struktury algebraiczne. Praca skupia się na budowie spójnego języka symbolicznego do modelowania stanów, przejść i zależności w złożonych systemach.",
           ".research-item:nth-child(2) .research-open-btn": "Otwórz w nowej karcie",
-          ".knowledge-tab-title": "Knowledge Center",
+          ".knowledge-tab-title": "Centrum Wiedzy",
           ".knowledge-tab-text": "KnowledgeCenter to modułowa platforma wspierająca dane operacyjne i procesy biznesowe. Łączy informacje z produkcji, jakości, logistyki, utrzymania ruchu i HR w jednym źródle wiedzy, ułatwiając szybsze decyzje, większą przejrzystość i konsekwentne doskonalenie organizacji.",
           ".knowledge-tab-subtitle:nth-of-type(1)": "Cele",
           ".knowledge-tab-list li:nth-child(1)": "Stworzyć jedno miejsce do gromadzenia, porządkowania i udostępniania wiedzy operacyjnej.",
@@ -312,10 +312,10 @@
           ".knowledge-tab-two-col:nth-of-type(3) .knowledge-tab-col:nth-child(2) .knowledge-tab-subtitle": "Innowacja",
           ".knowledge-tab-two-col:nth-of-type(3) .knowledge-tab-col:nth-child(2) .knowledge-tab-text": "To nie tylko digitalizacja, ale również innowacja organizacyjna, która poprawia przepływ informacji, współpracę i zdolność do trwałego doskonalenia.",
           ".knowledge-tab > .knowledge-tab-text:last-of-type": "<strong>KnowledgeCenter już dziś uwalnia ponad 3 000 roboczogodzin rocznie w porównaniu z wcześniejszym sposobem realizacji tych samych procesów operacyjnych.</strong> <strong>Szacunek opiera się na skróceniu czasu realizacji procesów w rozwiązaniach, które zostały już wdrożone.</strong> <strong>Poza skróceniem czasu realizacji bieżących działań umożliwia także zadania, które wcześniej były zbyt czasochłonne, by wykonywać je regularnie i konsekwentnie.</strong> <strong>Daje natychmiastowy dostęp do użytecznej wiedzy w wielu obszarach, gdzie wcześniej uzyskanie podobnej widoczności wymagało dużego nakładu czasu i było znacznie trudniejsze.</strong> <strong>To działający zasób organizacyjny, który generuje wartość i oszczędności także wtedy, gdy nie ma mnie na miejscu.</strong>",
-          ".astronomy-tab-title": "Astronomia i astrofotografia",
-          ".astronomy-tab-text:nth-of-type(1)": "Obszar zainteresowan obejmujacy obserwacje astronomiczne, astrofotografie, analize danych obserwacyjnych oraz rozwoj wlasnych narzedzi wspierajacych planowanie i realizacje obserwacji.",
-          ".astronomy-tab-text:nth-of-type(2)": "To obszar cierpliwej obserwacji, planowania sesji pod warunki nieba oraz rejestrowania obiektow niebieskich w sposob, ktory pozwala zamienic odlegle zjawiska w cos namacalnego i mozliwego do dalszej eksploracji.",
-          ".astronomy-tab-note": "Przestrzen projektowa dla tej czesci mojej pracy jest wlasnie budowana i bedzie rozwijana wraz z kolejnymi obserwacjami i zebranym materialem."
+          ".astronomy-tab-title": "Astronomia Obserwacyjna i Astrofotografia",
+          ".astronomy-tab-text:nth-of-type(1)": "Obszar laczacy astronomie obserwacyjna, astrofotografie oraz analize danych astronomicznych. Obejmuje planowanie obserwacji na podstawie polozenia obiektow i warunkow nieba, dobor parametrow akwizycji, rejestracje materialu oraz jego pozniejsze przetwarzanie i analize.",
+          ".astronomy-tab-text:nth-of-type(2)": "Istotna czescia tego kierunku jest wykorzystanie metod obliczeniowych i tworzenie wlasnych narzedzi wspierajacych caly proces obserwacyjny od wyboru obiektu i okreslenia jego widocznosci, przez przygotowanie sesji, az po organizacje i analize zebranego materialu.",
+          ".astronomy-tab-note": "Obszar jest rozwijany rownolegle z praktycznymi obserwacjami i stanowi przestrzen do eksperymentowania na styku <strong>astronomii, matematyki, analizy danych i inzynierii oprogramowania</strong>."
         },
         attrs: [
           { selector: "html", attr: "lang", value: "pl" },
