@@ -97,7 +97,7 @@
           ".filter-button-group button:nth-child(1)": "INVESTMENT Real Estate",
           ".filter-button-group button:nth-child(2)": "Knowledge Center",
           ".filter-button-group button:nth-child(3)": "Research",
-          ".filter-button-group button:nth-child(4)": "Astronomy & Astrophotography",
+          ".filter-button-group button:nth-child(4)": "Observational Astronomy & Astrophotography",
           ".realestate-lead": "CREATOR AND MAINTAINER OF WEBSITE PLATFORM FOR A REAL ESTATE FRANCHISE NETWORK AND CUSTOMER RELATIONSHIP MANAGEMENT SYSTEM (CRM)",
           ".realestate-subtitle-main": "The Customer Relationship Management (CRM) system and website are actively used by the INVESTMENT Nieruchomości office, now expanding into a franchise network.",
           ".realestate-subtitle-secondary": "The integration layer connects website and CRM operations with partner offices abroad and key listing platforms in Poland.",
@@ -135,8 +135,8 @@
           ".knowledge-tab-two-col:nth-of-type(3) .knowledge-tab-col:nth-child(2) .knowledge-tab-text": "This is not only digitalization, but organizational innovation that improves information flow, collaboration, and sustainable improvement across the company.",
           ".knowledge-tab > .knowledge-tab-text:last-of-type": "<strong>KnowledgeCenter already reduces more than 3,000 labor hours per year compared with previous process execution, by improving and accelerating the same operational workflows.</strong> <strong>Estimated based on process time reductions across implemented workflows.</strong> <strong>Beyond shortening the duration of real operational processes, it also enables new activities that were previously too time-consuming and practically impossible to execute consistently.</strong> <strong>It provides immediate access to actionable knowledge across multiple topics, where obtaining the same visibility before was time-intensive and often practically unfeasible.</strong> <strong>It is a working organizational asset that continues to deliver savings and value even when I am not present.</strong>",
           ".astronomy-tab-title": "Observational Astronomy & Astrophotography",
-          ".astronomy-tab-text:nth-of-type(1)": "This area combines observational astronomy, astrophotography, and astronomical data analysis. It covers observation planning based on object positions and sky conditions, acquisition setup, image capture, and subsequent processing and analysis.",
-          ".astronomy-tab-text:nth-of-type(2)": "An important part of this work is the use of computational methods and the development of custom tools supporting the entire observational workflow from target selection and visibility analysis to session planning, data acquisition, organization, and processing.",
+          ".astronomy-tab-text-primary": "This area combines observational astronomy, astrophotography, and astronomical data analysis. It covers observation planning based on object positions and sky conditions, acquisition setup, image capture, and subsequent processing and analysis.",
+          ".astronomy-tab-text-secondary": "An important part of this work is the use of computational methods and the development of custom tools supporting the entire observational workflow from target selection and visibility analysis to session planning, data acquisition, organization, and processing.",
           ".astronomy-tab-note": "The area is developed alongside practical observations and serves as an experimental space at the intersection of <strong>astronomy, mathematics, data analysis, and software engineering</strong>."
         },
         attrs: [
@@ -275,7 +275,7 @@
           ".filter-button-group button:nth-child(1)": "INVESTMENT Nieruchomości",
           ".filter-button-group button:nth-child(2)": "Centrum Wiedzy",
           ".filter-button-group button:nth-child(3)": "Badania",
-          ".filter-button-group button:nth-child(4)": "Astronomia i astrofotografia",
+          ".filter-button-group button:nth-child(4)": "Astronomia Obserwacyjna i Astrofotografia",
           ".realestate-lead": "TWÓRCA I OPIEKUN PLATFORMY WWW DLA SIECI FRANCZYZOWEJ BIUR NIERUCHOMOŚCI ORAZ SYSTEMU CRM WSPIERAJĄCEGO SPRZEDAŻ I OBSŁUGĘ OFERT",
           ".realestate-subtitle-main": "System CRM i platforma webowa są aktywnie wykorzystywane przez INVESTMENT Nieruchomości — organizację rozwijającą się dziś w kierunku sieci franczyzowej.",
           ".realestate-subtitle-secondary": "Warstwa integracyjna łączy stronę i CRM z zagranicznymi partnerami oraz najważniejszymi portalami ogłoszeniowymi w Polsce.",
@@ -313,8 +313,8 @@
           ".knowledge-tab-two-col:nth-of-type(3) .knowledge-tab-col:nth-child(2) .knowledge-tab-text": "To nie tylko digitalizacja, ale również innowacja organizacyjna, która poprawia przepływ informacji, współpracę i zdolność do trwałego doskonalenia.",
           ".knowledge-tab > .knowledge-tab-text:last-of-type": "<strong>KnowledgeCenter już dziś uwalnia ponad 3 000 roboczogodzin rocznie w porównaniu z wcześniejszym sposobem realizacji tych samych procesów operacyjnych.</strong> <strong>Szacunek opiera się na skróceniu czasu realizacji procesów w rozwiązaniach, które zostały już wdrożone.</strong> <strong>Poza skróceniem czasu realizacji bieżących działań umożliwia także zadania, które wcześniej były zbyt czasochłonne, by wykonywać je regularnie i konsekwentnie.</strong> <strong>Daje natychmiastowy dostęp do użytecznej wiedzy w wielu obszarach, gdzie wcześniej uzyskanie podobnej widoczności wymagało dużego nakładu czasu i było znacznie trudniejsze.</strong> <strong>To działający zasób organizacyjny, który generuje wartość i oszczędności także wtedy, gdy nie ma mnie na miejscu.</strong>",
           ".astronomy-tab-title": "Astronomia Obserwacyjna i Astrofotografia",
-          ".astronomy-tab-text:nth-of-type(1)": "Obszar laczacy astronomie obserwacyjna, astrofotografie oraz analize danych astronomicznych. Obejmuje planowanie obserwacji na podstawie polozenia obiektow i warunkow nieba, dobor parametrow akwizycji, rejestracje materialu oraz jego pozniejsze przetwarzanie i analize.",
-          ".astronomy-tab-text:nth-of-type(2)": "Istotna czescia tego kierunku jest wykorzystanie metod obliczeniowych i tworzenie wlasnych narzedzi wspierajacych caly proces obserwacyjny od wyboru obiektu i okreslenia jego widocznosci, przez przygotowanie sesji, az po organizacje i analize zebranego materialu.",
+          ".astronomy-tab-text-primary": "Obszar laczacy astronomie obserwacyjna, astrofotografie oraz analize danych astronomicznych. Obejmuje planowanie obserwacji na podstawie polozenia obiektow i warunkow nieba, dobor parametrow akwizycji, rejestracje materialu oraz jego pozniejsze przetwarzanie i analize.",
+          ".astronomy-tab-text-secondary": "Istotna czescia tego kierunku jest wykorzystanie metod obliczeniowych i tworzenie wlasnych narzedzi wspierajacych caly proces obserwacyjny od wyboru obiektu i okreslenia jego widocznosci, przez przygotowanie sesji, az po organizacje i analize zebranego materialu.",
           ".astronomy-tab-note": "Obszar jest rozwijany rownolegle z praktycznymi obserwacjami i stanowi przestrzen do eksperymentowania na styku <strong>astronomii, matematyki, analizy danych i inzynierii oprogramowania</strong>."
         },
         attrs: [

@@ -3766,18 +3766,28 @@ body.politics_version .astronomy-tab-note {
 
 body.politics_version .astronomy-tab-visual {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+    gap: 1rem;
     min-width: 0;
     border: 1px solid rgba(110, 128, 146, 0.28);
     background: rgba(255, 255, 255, 0.04);
     padding: 0.55rem;
 }
 
+body.politics_version .astronomy-tab-logo {
+    display: block;
+    width: min(100%, 260px);
+    max-height: 84px;
+    object-fit: contain;
+    object-position: center;
+}
+
 body.politics_version .astronomy-tab-image {
     display: block;
     width: 100%;
-    max-height: 340px;
+    max-height: 255px;
     object-fit: contain;
     object-position: center;
 }
