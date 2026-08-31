@@ -2986,8 +2986,19 @@ body.politics_version #home {
 }
 
 body.politics_version #home .ct-slick-homepage,
-body.politics_version #home .ct-header.item {
+body.politics_version #home .ct-header.item,
+body.politics_version #home .slick-list,
+body.politics_version #home .slick-track,
+body.politics_version #home .slick-slide,
+body.politics_version #home .ct-u-display-tablex,
+body.politics_version #home .ct-u-display-tablex > .inner {
     background: transparent !important;
+    background-color: transparent !important;
+}
+
+body.politics_version #home .ct-header.item::before,
+body.politics_version #home .ct-u-display-tablex > .inner::before {
+    display: none !important;
 }
 
     body.politics_version #home .slick-prev {
