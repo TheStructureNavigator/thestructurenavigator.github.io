@@ -231,11 +231,11 @@
                     <div class="services-inner-box">
 						<div class="service-head">
 							<div class="ser-icon">
-								<img loading="lazy" decoding="async" src="images/hacking.png" alt="Automation Icon" style="width: 70px; height: auto;" />
+								<img loading="lazy" decoding="async" src="images/astrophoto.png" alt="Astrophotography Icon" style="width: 70px; height: auto;" />
 							</div>
-							<h2>Cybersecurity</h2>
+							<h2>Astronomy & Astrophotography</h2>
 						</div>
-						<p>Fascinated by cybersecurity, actively exploring network security, OSINT, and ethical hacking, while developing skills to safeguard digital systems and mitigate risks effectively.</p>
+						<p>Interested in observational astronomy and astrophotography, exploring the night sky through direct observation and capturing celestial objects in images.</p>
 					</div>
                 </div><!-- end col -->
 				<div class="col-md-4">
@@ -264,7 +264,8 @@
 				<span class="connector-trunk"></span>
 				<span class="connector-rail"></span>
 				<span class="connector-branch connector-branch-left"></span>
-				<span class="connector-branch connector-branch-center"></span>
+				<span class="connector-branch connector-branch-left-center"></span>
+				<span class="connector-branch connector-branch-right-center"></span>
 				<span class="connector-branch connector-branch-right"></span>
 			</div>
 			
@@ -274,6 +275,7 @@
 						<button class="btn-new from-middle animated active" data-filter=".gal_realestate">Real Estate Website & CRM</button>
 						<button class="btn-new from-middle animated" data-filter=".gal_knowledge">Knowledge Center</button>
 						<button class="btn-new from-middle animated" data-filter=".gal_research">Research</button>
+						<button class="btn-new from-middle animated" data-filter=".gal_astronomy">Astronomy & Astrophotography</button>
 					</div>
 				</div>
 			</div>
@@ -518,6 +520,24 @@
 				</p>
 			</div>
 
+			<div class="astronomy-tab" id="astronomy-tab">
+				<div class="astronomy-tab-copy">
+					<p class="astronomy-tab-title">Astronomy & Astrophotography</p>
+					<p class="astronomy-tab-text">
+						Observational astronomy and astrophotography are a personal extension of the same curiosity that drives my technical work: understanding structures, patterns, and systems that are difficult to see at first glance.
+					</p>
+					<p class="astronomy-tab-text">
+						This area is about patient observation, planning sessions around sky conditions, and capturing celestial objects in a way that turns distant phenomena into something directly explorable and tangible.
+					</p>
+					<p class="astronomy-tab-note">
+						A visual project space for this part of my work is now being assembled and will grow with future observations and image captures.
+					</p>
+				</div>
+				<div class="astronomy-tab-visual">
+					<img loading="lazy" decoding="async" src="images/astrophoto.png" alt="Astrophotography preview" class="astronomy-tab-image" />
+				</div>
+			</div>
+
 			</div>
 		</div>
 	</div>
@@ -575,6 +595,9 @@
             }
             if (filter === '.gal_knowledge') {
               hydrateDeferredAssets(document.getElementById('knowledge-tab'));
+            }
+            if (filter === '.gal_astronomy') {
+              hydrateDeferredAssets(document.getElementById('astronomy-tab'));
             }
           });
         });

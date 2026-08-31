@@ -129,6 +129,7 @@
             var $realestateTab = $('#realestate-tab');
             var $researchTab = $('#research-tab');
             var $knowledgeTab = $('#knowledge-tab');
+            var $astronomyTab = $('#astronomy-tab');
             var $galleryList = $('.gallery-list');
             var itemsPerPage = 9;
             var currentPage = 1;
@@ -147,6 +148,7 @@
                     $realestateTab.css('display', 'grid');
                     $researchTab.hide();
                     $knowledgeTab.hide();
+                    $astronomyTab.hide();
                     $galleryList.hide();
                     $pager.hide();
                     return;
@@ -156,6 +158,7 @@
                     $realestateTab.hide();
                     $researchTab.css('display', 'grid');
                     $knowledgeTab.hide();
+                    $astronomyTab.hide();
                     $galleryList.hide();
                     $pager.hide();
                     return;
@@ -165,6 +168,17 @@
                     $realestateTab.hide();
                     $researchTab.hide();
                     $knowledgeTab.css('display', 'block');
+                    $astronomyTab.hide();
+                    $galleryList.hide();
+                    $pager.hide();
+                    return;
+                }
+
+                if (currentFilter === '.gal_astronomy') {
+                    $realestateTab.hide();
+                    $researchTab.hide();
+                    $knowledgeTab.hide();
+                    $astronomyTab.css('display', 'grid');
                     $galleryList.hide();
                     $pager.hide();
                     return;
@@ -173,6 +187,7 @@
                 $realestateTab.hide();
                 $researchTab.hide();
                 $knowledgeTab.hide();
+                $astronomyTab.hide();
                 $galleryList.show();
 
                 var $filtered = getFilteredItems();

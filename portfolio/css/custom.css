@@ -14,6 +14,7 @@ body.politics_version {
   max-width: 100%;
   padding-left: 0.85rem;
   padding-right: 1.15rem;
+  position: relative;
 }
 
 #mainNav .navbar-brand {
@@ -28,15 +29,19 @@ body.politics_version {
 
 #mainNav .navbar-collapse {
   justify-content: flex-end;
+  padding-right: 4.5rem;
 }
 
 #mainNav .language-switcher {
   display: inline-flex;
   align-items: center;
   gap: 0.45rem;
-  margin-left: 0.85rem;
-  margin-right: 0;
-  order: 0;
+  margin: 0;
+  position: absolute;
+  right: 1.15rem;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1041;
 }
 
 .language-switcher__button {
@@ -65,9 +70,9 @@ body.politics_version {
 
 .language-switcher__flag {
   display: block;
-  width: 1.32rem;
-  height: 0.92rem;
-  border-radius: 2px;
+  width: 2rem;
+  height: 1.35rem;
+  border-radius: 3px;
 }
 
 #mainNav .navbar-nav .nav-link {
@@ -117,11 +122,14 @@ body.politics_version {
 
   #mainNav .navbar-collapse {
     align-items: flex-start;
+    padding-right: 0;
   }
 
   #mainNav .language-switcher {
-    margin-top: 0.75rem;
-    margin-left: 0.75rem;
-    margin-right: 0;
+    right: 0.75rem;
+  }
+
+  #mainNav .navbar-toggler {
+    margin-right: 3.5rem;
   }
 }
