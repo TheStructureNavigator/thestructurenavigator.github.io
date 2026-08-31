@@ -88,7 +88,7 @@
           "#services .col-md-4:nth-child(3) p": "Focused on practical applications of simulation modeling, optimization, numerical methods, mathematical models, and computational approaches used to solve real-world problems.",
           "#services .col-md-4:nth-child(4) h2": "Process Automation & AI",
           "#services .col-md-4:nth-child(4) p": "Driven by a passion for automating processes and utilizing AI to enhance efficiency across various business areas, improving operations and enabling smarter decision-making.",
-          "#services .col-md-4:nth-child(5) h2": "Astronomy & Astrophotography",
+          "#services .col-md-4:nth-child(5) h2": "Observational Astronomy & Astrophotography",
           "#services .col-md-4:nth-child(5) p": "An area of interest focused on astronomical observations, astrophotography, observational data analysis, and building my own tools to support planning and carrying out observation sessions.",
           "#services .col-md-4:nth-child(6) h2": "Mathematics & Process Algebra",
           "#services .col-md-4:nth-child(6) p": "Exploring mathematical structures, process algebra, graph theory, optimization, and abstract models used to describe, analyze, and improve complex systems and business processes.",
