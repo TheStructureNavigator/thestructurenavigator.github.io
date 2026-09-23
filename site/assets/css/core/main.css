@@ -1185,6 +1185,7 @@ input, select, textarea {
 /* Wrapper */
 
 	#wrapper {
+		box-sizing: border-box;
 		display: -moz-flex;
 		display: -webkit-flex;
 		display: -ms-flex;
@@ -1205,6 +1206,8 @@ input, select, textarea {
 		min-height: 100vh;
 		width: 100%;
 		max-width: 100vw;
+		min-width: 0;
+		overflow-x: hidden;
 		padding: 4rem 2rem;
 		z-index: 3;
 	}
@@ -1825,9 +1828,11 @@ input, select, textarea {
 		-ms-transition: -ms-transform 0.325s ease-in-out, -ms-filter 0.325s ease-in-out, opacity 0.325s ease-in-out;
 		transition: transform 0.325s ease-in-out, filter 0.325s ease-in-out, opacity 0.325s ease-in-out;
 		width: 100%;
-		max-width: 100%;
-		margin-top: 1rem;
+		max-width: calc(100vw - 4rem);
+		margin-top: 0.5rem;
 		text-align: center;
+		min-width: 0;
+		overflow-x: hidden;
 	}
 
 		#footer .copyright {
@@ -1840,11 +1845,15 @@ input, select, textarea {
 			font-size: 0.72rem;
 			line-height: 1.45;
 			opacity: 0.86;
+			max-width: 100%;
+			min-width: 0;
 			margin-bottom: 0;
+			overflow-wrap: anywhere;
 		}
 
 		#footer .copyright .brand-case {
 			text-transform: none;
+			overflow-wrap: anywhere;
 		}
 
 		#footer .footer-logo {
@@ -1860,6 +1869,10 @@ input, select, textarea {
 			#footer .copyright {
 				letter-spacing: 0.04rem;
 				font-size: 0.64rem;
+			}
+
+			#footer {
+				max-width: calc(100vw - 2rem);
 			}
 
 		}
