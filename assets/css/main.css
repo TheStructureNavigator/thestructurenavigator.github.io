@@ -1828,24 +1828,35 @@ input, select, textarea {
 	}
 
 		#footer .copyright {
+			display: inline-flex;
+			align-items: center;
+			justify-content: center;
+			flex-wrap: wrap;
+			gap: 0.38rem;
 			letter-spacing: 0.08rem;
-			font-size: 0.55rem;
-			line-height: 1.2;
-			opacity: 0.75;
+			font-size: 0.72rem;
+			line-height: 1.45;
+			opacity: 0.86;
 			margin-bottom: 0;
-			text-transform: uppercase;
-			white-space: nowrap;
 		}
 
 		#footer .copyright .brand-case {
 			text-transform: none;
 		}
 
+		#footer .footer-logo {
+			width: 1.35rem;
+			height: 1.35rem;
+			border-radius: 50%;
+			object-fit: contain;
+			vertical-align: middle;
+		}
+
 		@media screen and (max-width: 480px) {
 
 			#footer .copyright {
 				letter-spacing: 0.04rem;
-				font-size: 0.52rem;
+				font-size: 0.64rem;
 			}
 
 		}

@@ -37,7 +37,7 @@ html, body{
 }
 
 body.demos .section {
-    background: url(../images/bg.png) repeat top center #f2f3f5;
+    background: #f2f3f5;
 }
 
 body.demos .section-title img {
@@ -1498,7 +1498,7 @@ hr.invis1 {
     width: 100%;
     height: 100%;
     position: relative;
-    background: url("../uploads/code.jpg") no-repeat;
+    background: #111111;
 }
 
 .design-wrapper {
@@ -1519,7 +1519,7 @@ hr.invis1 {
     position: relative;
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
-    background: url("../uploads/design.jpg") no-repeat;
+    background: #222222;
 }
 
 .filter-button-group{
@@ -2280,7 +2280,7 @@ select.mobile-device {
 }
 
 #contact {
-    background: url(../images/bg.png) no-repeat center center #333333;
+    background: #333333;
 }
 
 
@@ -4289,15 +4289,14 @@ body.politics_version .copyrights .container {
 body.politics_version .footer-distributed .footer-company-name {
     color: rgba(255, 255, 255, 0.78);
     letter-spacing: 0.08rem;
-    text-transform: uppercase;
 }
 
 body.politics_version .dmtop {
-    bottom: 68px;
+    bottom: 82px;
 }
 
 body.politics_version .dmtop.show {
-    bottom: 68px;
+    bottom: 82px;
 }
 
 @media (min-width: 1200px) {
