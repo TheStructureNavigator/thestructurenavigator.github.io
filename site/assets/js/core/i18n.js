@@ -29,7 +29,7 @@
           "#about .about-summary": "self-taught code assembler & problem solver",
           "#about .about-summary-secondary": "designing industrial systems, business automation platforms, data-driven applications and mathematical frameworks",
           "#about .about-right .button.small[href='#contact']": "Contact",
-          "#about .about-right .button.small[href='portfolio/index.html']": "Dive deeper",
+          "#about .about-right .button.small[href='portfolio.html']": "Dive deeper",
           "#contact .major": "Contact",
           ".contact-copy-btn span": "Copy mail",
           "#contact .contact-platform-heading": "Find me at",
@@ -211,7 +211,7 @@
           "#about .about-summary": "łączę myślenie systemowe, technologię i praktyczne rozwiązywanie problemów",
           "#about .about-summary-secondary": "projektuję rozwiązania dla procesów przemysłowych i biznesowych — od aplikacji i automatyzacji po struktury danych i modele wspierające decyzje",
           "#about .about-right .button.small[href='#contact']": "Kontakt",
-          "#about .about-right .button.small[href='portfolio/index.html']": "Zobacz portfolio",
+          "#about .about-right .button.small[href='portfolio.html']": "Zobacz portfolio",
           "#contact .major": "Kontakt",
           ".contact-copy-btn span": "Kopiuj mail",
           "#contact .contact-platform-heading": "Znajdziesz mnie na",
@@ -434,7 +434,7 @@
       return;
     }
 
-    var assetBase = getPageKey() === "portfolio" ? "../images/flags/" : "images/flags/";
+    var assetBase = "images/core/flags/";
     var nextLanguage = language === "pl" ? "en" : "pl";
     var nextLanguageLabel = nextLanguage === "pl" ? "Polski" : "English";
     var nextLanguageFlag = nextLanguage === "pl" ? "pl.svg" : "en.svg";

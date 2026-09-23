@@ -88,6 +88,7 @@ input, select, textarea {
 
 	html {
 		box-sizing: border-box;
+		overflow-x: hidden;
 	}
 
 	*, *:before, *:after {
@@ -96,6 +97,7 @@ input, select, textarea {
 
 	body {
 		background: #1b1f22;
+		overflow-x: hidden;
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -646,7 +648,7 @@ input, select, textarea {
 
 		.image:before {
 			pointer-events: none;
-			background-image: url("../../images/overlay.png");
+			background-image: url("../../../images/core/overlay.png");
 			background-color: rgba(19, 21, 25, 0.5);
 			border-radius: 4px;
 			content: '';
@@ -1139,7 +1141,7 @@ input, select, textarea {
 			-webkit-transition-delay: 0.15s;
 			-ms-transition-delay: 0.15s;
 			transition-delay: 0.15s;
-			background-image: linear-gradient(to top, rgba(19, 21, 25, 0.5), rgba(19, 21, 25, 0.5)), url("../../images/overlay.png");
+			background-image: linear-gradient(to top, rgba(19, 21, 25, 0.5), rgba(19, 21, 25, 0.5)), url("../../../images/core/overlay.png");
 			background-size: auto,
  256px 256px;
 			background-position: center,
@@ -1158,7 +1160,7 @@ input, select, textarea {
 			-webkit-transition: -webkit-transform 0.325s ease-in-out, -webkit-filter 0.325s ease-in-out;
 			-ms-transition: -ms-transform 0.325s ease-in-out, -ms-filter 0.325s ease-in-out;
 			transition: transform 0.325s ease-in-out, filter 0.325s ease-in-out;
-			background-image: url("../../images/mnt.webp");
+			background-image: url("../../../images/core/mnt.webp");
 			background-position: center;
 			background-size: cover;
 			background-repeat: no-repeat;
@@ -1202,6 +1204,7 @@ input, select, textarea {
 		position: relative;
 		min-height: 100vh;
 		width: 100%;
+		max-width: 100vw;
 		padding: 4rem 2rem;
 		z-index: 3;
 	}
